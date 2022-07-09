@@ -4,7 +4,7 @@ category: Browser
 
 # useFileDialog
 
-Open file dialog with ease.
+轻松打开文件对话框。
 
 ## Usage
 

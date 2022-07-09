@@ -4,7 +4,7 @@ category: Component
 
 # tryOnBeforeUnmount
 
-Safe `onBeforeUnmount`. Call `onBeforeUnmount()` if it's inside a component lifecycle, if not, do nothing
+安全的 `onBeforeUnmount`。如果它在组件生命周期内，则调用 `onBeforeUnmount()`，如果不是，则不执行任何操作。
 
 ## Usage
 

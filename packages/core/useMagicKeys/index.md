@@ -4,7 +4,7 @@ category: Sensors
 
 # useMagicKeys
 
-Reactive keys pressed state, with magical keys combination support.
+响应式的键盘按键状态，具有神奇的组合键支持。
 
 <RequiresProxy />
 
@@ -30,7 +30,7 @@ Check out [all the possible keycodes](https://developer.mozilla.org/en-US/docs/W
 
 ### Combinations
 
-You can magically use combinations (shortcuts/hotkeys) by connecting keys with `+` or `_`.
+您可以通过使用 `+` 或 `_` 连接键来神奇地使用组合（快捷键/热键）。
 
 ```ts
 import { useMagicKeys } from '@vueuse/core'
@@ -55,7 +55,7 @@ watch(Ctrl_A_B, (v) => {
 })
 ```
 
-You can also use `whenever` function to make it shorter
+你也可以使用 `whenever` 函数来缩短它。
 
 ```ts
 import { useMagicKeys, whenever } from '@vueuse/core'
@@ -69,7 +69,7 @@ whenever(keys.shift_space, () => {
 
 ### Current Pressed keys
 
-A special property `current` is provided to representing all the keys been pressed currently.
+提供了一个特殊的属性 `current` 来表示当前按下的所有键。
 
 ```ts
 import { useMagicKeys } from '@vueuse/core'
@@ -98,11 +98,11 @@ const { shift_cool } = useMagicKeys({
 whenever(shift_cool, () => console.log('Shift + Space have been pressed'))
 ```
 
-By default, we have some [preconfigured alias for common practices](https://github.com/vueuse/vueuse/blob/main/packages/core/useMagicKeys/aliasMap.ts).
+默认情况下，我们有一些[常用用法的预配置别名](https://github.com/vueuse/vueuse/blob/main/packages/core/useMagicKeys/aliasMap.ts)。
 
 ### Conditionally Disable
 
-You might have some `<input />` elements in your apps, and you don't want to trigger the magic keys handling when users focused on those inputs. There is an example of using `useActiveElement` and `and` to do that.
+您的应用程序中可能有一些 `<input />` 元素，并且您不希望在用户关注这些输入时触发魔术键处理。有一个使用 `useActiveElement` 的示例及 `and` 去执行此操作。
 
 ```ts
 import { and, useActiveElement, useMagicKeys, whenever } from '@vueuse/core'
@@ -137,11 +137,11 @@ const { ctrl_s } = useMagicKeys({
 whenever(ctrl_s, () => console.log('Ctrl+S have been pressed'))
 ```
 
-> ⚠️ This usage is NOT recommended, please use with caution.
+> ⚠️ 不推荐这种用法，请谨慎使用。
 
 ### Reactive Mode
 
-By default, the values of `useMagicKeys()` are `Ref<boolean>`. If you want to use the object in the template, you can set it to reactive mode.
+默认情况下，`useMagicKeys()` 的值为 `Ref<boolean>`。如果要使用模板中的对象，可以将其设置为反应模式。
 
 ```ts
 const keys = useMagicKeys({ reactive: true })

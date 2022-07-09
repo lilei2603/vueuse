@@ -5,7 +5,7 @@ related: resolveRef
 
 # resolveUnref
 
-Get the value of value/ref/getter.
+获取 value/ref/getter 的值。
 
 ## Usage
 

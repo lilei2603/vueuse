@@ -4,7 +4,7 @@ category: Browser
 
 # useEventListener
 
-Use EventListener with ease. Register using [addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) on mounted, and [removeEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) automatically on unmounted.
+轻松使用 EventListener。在挂载时使用 [addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) 注册，在卸载时自动使用[removeEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)。
 
 ## Usage
 
@@ -14,7 +14,7 @@ import { useEventListener } from '@vueuse/core'
 useEventListener(document, 'visibilitychange', (evt) => { console.log(evt) })
 ```
 
-You can also pass a ref as the event target, `useEventListener` will unregister the previous event and register the new one when you change the target.
+您也可以传递一个 ref 作为事件目标，`useEventListener` 将取消注册之前的事件并在您更改目标时注册新的事件。
 
 ```ts
 import { useEventListener } from '@vueuse/core'

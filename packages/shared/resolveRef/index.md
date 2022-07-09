@@ -5,7 +5,7 @@ related: resolveUnref
 
 # resolveRef
 
-Normalize value/ref/getter to `ref` or `computed`.
+将 value/ref/getter 标准化为响应式数据或计算属性。
 
 ## Usage
 

@@ -4,11 +4,11 @@ category: Watch
 
 # until
 
-Promised one-time watch for changes
+基于 Promise 的单次修改监听器。
 
 ## Usage
 
-#### Wait for some async data to be ready
+#### 等待一些异步数据准备好
 
 ```js
 import { until, useAsyncState } from '@vueuse/core'
@@ -25,9 +25,9 @@ const { state, ready } = useAsyncState(
 })()
 ```
 
-#### Wait for custom conditions
+#### 等待自定义条件
 
-> You can use `invoke` to call the async function.
+> 您可以使用 `invoke` 来调用异步函数。
 
 ```js
 import { invoke, until, useCounter } from '@vueuse/core'
@@ -41,13 +41,13 @@ invoke(async () => {
 })
 ```
 
-#### Timeout
+#### 超时
 
 ```ts
-// will be resolve until ref.value === true or 1000ms passed
+// 将解析直到 ref.value === true 或 1000 毫秒通过
 await until(ref).toBe(true, { timeout: 1000 })
 
-// will throw if timeout
+// 如果超时将抛出
 try {
   await until(ref).toBe(true, { timeout: 1000, throwOnTimeout: true })
   // ref.value === true
@@ -57,7 +57,7 @@ catch (e) {
 }
 ```
 
-#### More Examples
+#### 更多示例
 
 ```ts
 await until(ref).toBe(true)

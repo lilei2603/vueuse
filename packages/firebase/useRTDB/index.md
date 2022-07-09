@@ -4,7 +4,7 @@ category: '@Firebase'
 
 # useRTDB
 
-Reactive [Firebase Realtime Database](https://firebase.google.com/docs/database) binding. Making it straightforward to **always keep your local data in sync** with remotes databases.
+响应式的 [Firebase Realtime Database](https://firebase.google.com/docs/database) 实时数据库绑定。使**始终保持本地数据与远程数据库同步**变得简单。在附加组件 @vueuse/firebase 中可用。
 
 ## Usage
 
@@ -21,13 +21,13 @@ const db = firebase
 const todos = useRTDB(db.ref('todos'))
 ```
 
-You can reuse the db reference by passing `autoDispose: false`
+您可以通过传递 `autoDispose: false` 来重用 db 引用
 
 ```ts
 const todos = useRTDB(db.ref('todos'), { autoDispose: false })
 ```
 
-or use `createGlobalState` from the core package
+或使用核心包中的 `createGlobalState`
 
 ```js
 // store.js

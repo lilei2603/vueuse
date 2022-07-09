@@ -1,13 +1,13 @@
-# Best Practice
+# 最佳实践
 
-### Destructuring
+### 解构
 
-Most of the functions in VueUse returns an **object of refs** that you can use [ES6's object destructure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) syntax to take what you need. For example:
+VueUse 中的大多数函数都会返回一个 **refs对象**，您可以使用 [ES6的对象解构语法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) 来获取您需要的内容。例如：
 
 ```ts
 import { useMouse } from '@vueuse/core'
 
-// "x" and "y" are refs
+// "x" 和 "y" 是 refs
 const { x, y } = useMouse()
 
 console.log(x.value)
@@ -17,7 +17,7 @@ const mouse = useMouse()
 console.log(mouse.x.value)
 ```
 
-If you prefer to use them as object properties style, you can unwrap the refs by using `reactive()`. For example:
+如果您更喜欢将它们用作对象属性样式，则可以使用 `reactive()` 解开引用。例如：
 
 ```ts
 import { reactive } from 'vue'
@@ -25,6 +25,6 @@ import { useMouse } from '@vueuse/core'
 
 const mouse = reactive(useMouse())
 
-// "x" and "y" will be auto unwrapped, no `.value` needed
+// "x" 和 "y" 将自动展开，不需要 `.value`
 console.log(mouse.x)
 ```

@@ -4,19 +4,19 @@ category: Browser
 
 # useScreenSafeArea
 
-Reactive `env(safe-area-inset-*)`
+响应式的 `env(safe-area-inset-*)`
 
 ![image](https://webkit.org/wp-content/uploads/safe-areas-1.png)
 
 ## Usage
 
-In order to make the page to be fully rendered in the screen, the additional attribute `viewport-fit=cover` within  `viewport` meta tag must be set firstly, the viewport meta tag may look like this:
+为了使页面在屏幕中完全呈现，必须首先设置视口元标记内的附加属性 `viewport-fit=cover`，`viewport` 元标记可能如下所示：
 
 ```html
 <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
 ```
 
-Then we could use `useScreenSafeArea` in the component as shown below:
+然后我们可以在组件中使用 `useScreenSafeArea` ，如下所示：
 
 ```ts
 import { useScreenSafeArea } from '@vueuse/core'
@@ -29,7 +29,7 @@ const {
 } = useScreenSafeArea()
 ```
 
-For further details, you may refer to this documentation: [Designing Websites for iPhone X](https://webkit.org/blog/7929/designing-websites-for-iphone-x/)
+有关详细信息，您可以参考此文档：[Designing Websites for iPhone X](https://webkit.org/blog/7929/designing-websites-for-iphone-x/)
 
 ## Component Usage
 

@@ -4,7 +4,7 @@ category: Browser
 
 # useFavicon
 
-Reactive favicon
+响应式favicon
 
 ## Usage
 
@@ -18,7 +18,7 @@ icon.value = 'dark.png' // change current icon
 
 ### Passing a source ref
 
-You can pass a `ref` to it, changes from of the source ref will be reflected to your favicon automatically.
+您可以将 ref 传递给它，原 ref 的更改将自动反映到您的 favicon。
 
 ```js {7}
 import { computed } from 'vue'
@@ -30,7 +30,7 @@ const favicon = computed(() => isDark.value ? 'dark.png' : 'light.png')
 useFavicon(favicon)
 ```
 
-When a source ref is passed, the return ref will be identical to the source ref
+当一个源 ref 被传递时，返回的 ref 将与源 ref 相同
 
 ```ts
 const source = ref('icon.png')

@@ -1,7 +1,7 @@
 <template>
   <blockquote>
     <p>
-      This function also provides a directive version via the <code>@vueuse/components</code> package. <a href="/guide/components">Learn more about the usage</a>.
+      该函数还通过 <code>@vueuse/components</code> 包提供指令版本。<a href="/guide/components">了解更多关于使用的信息</a>。
     </p>
   </blockquote>
 </template>

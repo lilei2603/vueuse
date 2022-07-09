@@ -4,7 +4,8 @@ category: '@RxJS'
 
 # useSubscription
 
-Uses subscriptions without worry about unsubscribing to it or memory leaks.
+使用订阅而不用担心取消订阅或内存泄漏。
+
 
 ## Usage
 
@@ -14,7 +15,7 @@ import { interval } from 'rxjs'
 
 const count = ref(0)
 
-// useSubscription call unsubscribe method before unmount the component
+// useSubscription 在卸载组件前调用 unsubscribe 方法
 useSubscription(
   interval(1000)
     .subscribe(() => {

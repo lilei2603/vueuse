@@ -4,7 +4,7 @@ category: Sensors
 
 # onKeyStroke
 
-Listen for keyboard key being stroked.
+监听键盘敲击事件
 
 ## Usage
 
@@ -16,7 +16,7 @@ onKeyStroke('ArrowDown', (e) => {
 })
 ```
 
-See [this table](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values) for all key codes.
+有关所有关键代码，请参见[此表](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values)。
 
 ### Listen To Multiple Keys
 

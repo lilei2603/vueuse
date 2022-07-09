@@ -4,7 +4,7 @@ category: Browser
 
 # useClipboard
 
-Reactive [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API). Provides the ability to respond to clipboard commands (cut, copy, and paste) as well as to asynchronously read from and write to the system clipboard. Access to the contents of the clipboard is gated behind the Permissions API without user permission, reading or altering the clipboard contents is not permitted.
+响应式的 [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API)。提供响应剪贴板命令（剪切、复制和粘贴）以及异步读取和写入系统剪贴板的能力。未经用户许可，对剪贴板内容的访问在 Permissions API 后面进行，不允许读取或更改剪贴板内容。
 
 ## Usage
 

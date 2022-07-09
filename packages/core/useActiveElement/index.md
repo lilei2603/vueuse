@@ -4,7 +4,7 @@ category: Elements
 
 # useActiveElement
 
-Reactive `document.activeElement`
+响应式的 `document.activeElement`
 
 ## Usage
 

@@ -4,9 +4,9 @@ category: Component
 
 # useTemplateRefsList
 
-Shorthand for binding refs to template elements and components inside `v-for`.
+将引用绑定到 `v-for` 中的模板元素和组件的简写。
 
-> This function only works for Vue 3.x.
+> 该函数仅适用于 Vue 3.x。
 
 ## Usage
 

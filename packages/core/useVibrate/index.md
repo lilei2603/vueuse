@@ -4,22 +4,17 @@ category: Browser
 
 # useVibrate
 
-Reactive [Vibration API](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API)
+响应式的 [Vibration API](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API)
 
-Most modern mobile devices include vibration hardware, which lets software 
-code provides physical feedback to the user by causing the device to shake. 
+大多数现代移动设备都包含振动硬件，它允许软件代码通过使设备振动来向用户提供物理反馈。
 
-The Vibration API offers Web apps the ability to access this hardware, 
-if it exists, and does nothing if the device doesn't support it.
+Vibration API 为 Web 应用程序提供了访问此硬件（如果存在）的能力，并且如果设备不支持它，则不执行任何操作。
 
 ## Usage
 
-Vibration is described as a pattern of on-off pulses, which may be of varying 
-lengths. 
+振动被描述为开关脉冲的模式，其长度可能不同。
 
-The pattern may consist of either a single integer describing the 
-number of milliseconds to vibrate, or an array of integers describing 
-a pattern of vibrations and pauses.
+该模式可以由描述振动的毫秒数的单个整数组成，也可以由描述振动和暂停模式的整数数组组成。
 
 ```ts
 import { useVibrate } from '@vueuse/core'

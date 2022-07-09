@@ -7,11 +7,11 @@ related:
 
 # useDebouncedRefHistory
 
-Shorthand for `useRefHistory` with debounced filter.
+带有防抖过滤的 `useRefHistory` 的实现。
 
 ## Usage
 
-This function takes a snapshot of your counter after 1000ms when the value of it starts to change.
+当计数器的值开始变化时，此函数会在 1000 毫秒后对您的计数器进行快照。
 
 ```ts
 import { ref } from 'vue'

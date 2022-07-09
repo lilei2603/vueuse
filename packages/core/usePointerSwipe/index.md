@@ -4,7 +4,7 @@ category: Sensors
 
 # usePointerSwipe
 
-Reactive swipe detection based on [PointerEvents](https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent).
+基于 [PointerEvents](https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent) 的响应式滑动检测。
 
 ## Usage
 

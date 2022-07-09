@@ -4,9 +4,9 @@ category: Browser
 
 # useWebNotification
 
-Reactive [Notification](https://developer.mozilla.org/en-US/docs/Web/API/notification)
+响应式的 [Notification](https://developer.mozilla.org/en-US/docs/Web/API/notification)
 
-The Web Notification interface of the Notifications API is used to configure and display desktop notifications to the user.
+Notifications API 的 Web Notification 接口用于配置和向用户显示桌面通知。
 
 ## Usage
 
@@ -32,7 +32,7 @@ if (isSupported)
   show()
 ```
 
-This composable also utilizes the createEventHook utility from '@vueuse/shared`:
+这个可组合组件还利用了来自 '@vueuse/shared' 的 createEventHook 实用程序：
 
 ```ts
 onClick((evt: Event) => {

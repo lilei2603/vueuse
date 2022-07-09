@@ -5,7 +5,7 @@ related: syncRef
 
 # syncRefs
 
-Keep target refs in sync with a source ref
+使引用的目标数据与源数据保持同步
 
 ## Usage
 
@@ -24,9 +24,9 @@ source.value = 'foo'
 console.log(target.value) // foo
 ```
 
-## Watch options
+## 监听选项
 
-The options for `syncRefs` are similar to `watch`'s `WatchOptions` but with different default values.
+`syncRefs` 的选项类似于 `watch` 的 `WatchOptions`，但默认值不同。
 
 ```ts
 export interface SyncRefOptions {
@@ -51,7 +51,7 @@ export interface SyncRefOptions {
 }
 ```
 
-When setting `{ flush: 'pre' }`, the target reference will be updated at [the end of the current "tick"](https://vuejs.org/guide/essentials/watchers.html#callback-flush-timing) before rendering starts.
+设置 `{ flush: 'pre' }` 时，目标引用将在渲染开始前在[当前“tick”结束时](https://vuejs.org/guide/essentials/watchers.html#callback-flush-timing)更新。
 
 ```ts
 import { syncRefs } from '@vueuse/core'

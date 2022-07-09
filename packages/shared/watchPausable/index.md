@@ -5,11 +5,11 @@ alias: pausableWatch
 
 # watchPausable
 
-Pausable watch
+可暂停的监听器
 
 ## Usage
 
-Use as normal the `watch`, but return extra `pause()` and `resume()` functions to control.
+正常使用监听器，但返回额外的 `pause()` 和 `resume()` 函数来控制。
 
 ```ts
 import { watchPausable } from '@vueuse/core'

@@ -4,7 +4,7 @@ import { contributors } from '../../../contributors'
 
 <template>
   <h2 op50 font-normal pt-5 pb-2>
-    Contributors
+    贡献者
   </h2>
   <div op80 text-lg max-w-200 text-center leading-7 p-10>
     <div flex="~ wrap gap-1" justify-center>

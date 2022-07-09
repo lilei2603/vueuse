@@ -4,7 +4,7 @@ category: Utilities
 
 # reactiveOmit
 
-Reactively omit fields from a reactive object.
+响应式地省略对象中的字段。
 
 ## Usage
 
@@ -21,9 +21,9 @@ const obj = reactive({
 const picked = reactiveOmit(obj, 'x', 'elementX') // { y: number, elementY: number }
 ```
 
-### Scenarios
+### 场景
 
-#### Selectively passing props to child
+#### 有选择地将道具传递给子组件
 
 ```html
 <script setup>

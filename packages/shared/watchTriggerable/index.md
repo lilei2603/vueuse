@@ -4,11 +4,11 @@ category: Watch
 
 # watchTriggerable
 
-Watch that can be triggered manually
+可手动触发的监听器
 
 ## Usage
 
-A `watch` wrapper that supports manual triggering of `WatchCallback`, which returns an additional `trigger` to execute a `WatchCallback` immediately.
+一个支持手动触发 `WatchCallback` 的 `watch` 包装器，它返回一个额外的触发器来立即执行 `WatchCallback`。
 
 ```ts
 import { watchTriggerable } from '@vueuse/core'
@@ -29,9 +29,10 @@ trigger() // logs: Changed to bar!
 ```
 
 ### `onCleanup`
-When you want to manually call a `watch` that uses the onCleanup parameter; simply taking the `WatchCallback` out and calling it doesn't make it easy to implement the `onCleanup` parameter.
+当你想手动调用一个使用 `onCleanup` 参数的手表时；简单地取出 `WatchCallback` 并调用它并不容易实现 `onCleanup` 参数。
 
-Using `watchTriggerable` will solve this problem.
+使用 `watchTriggerable` 将解决这个问题。
+
 ```ts
 import { watchTriggerable } from '@vueuse/core'
 import { ref } from 'vue'

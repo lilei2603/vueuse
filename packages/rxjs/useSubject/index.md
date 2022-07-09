@@ -4,7 +4,8 @@ category: '@RxJS'
 
 # useSubject
 
-Bind Subject to ref and propagate value changes both ways.
+将 Subject 绑定到 ref 并以两种方式传播值更改。
+
 
 ## Usage
 
@@ -18,7 +19,7 @@ const subject = new Subject()
 const subjectRef = useSubject(subject)
 ```
 
-If you want to add custom error handling to a Subject that might error, you can supply an optional `onError` configuration. Without this, RxJS will treat any error in the supplied observable as an "unhandled error" and it will be thrown in a new call stack and reported to `window.onerror` (or `process.on('error')` if you happen to be in node).
+如果您想为可能出错的主题添加自定义错误处理，您可以提供可选的 `onError` 配置。如果没有这个，RxJS 会将提供的 observable 中的任何错误视为“未处理的错误”，并将其抛出到新的调用堆栈中并报告给 `window.onerror`（或 `process.on('error')` 如果你碰巧在节点）。
 
 ```ts
 import { useSubject } from '@vueuse/rxjs'

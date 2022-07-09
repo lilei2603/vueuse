@@ -4,7 +4,7 @@ category: Sensors
 
 # useBattery
 
-Reactive [Battery Status API](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API), more often referred to as the Battery API, provides information about the system's battery charge level and lets you be notified by events that are sent when the battery level or charging status change. This can be used to adjust your app's resource usage to reduce battery drain when the battery is low, or to save changes before the battery runs out in order to prevent data loss.
+响应式的 [Battery Status API](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API)。 通常称为电池 API，它提供有关系统电池电量的信息，并让您在电池电量或充电状态发生变化时收到发送的事件通知。这可用于调整应用程序的资源使用情况，以在电池电量不足时减少电池消耗，或在电池耗尽之前保存更改以防止数据丢失。
 
 ## Usage
 
@@ -14,21 +14,21 @@ import { useBattery } from '@vueuse/core'
 const { charging, chargingTime, dischargingTime, level } = useBattery()
 ```
 
-| State           | Type      | Description                                                       |
+| 状态             | 类型      | 描述                                                               |
 | --------------- | --------- | ----------------------------------------------------------------- |
-| charging        | `Boolean` | If the device is currently charging.                              |
-| chargingTime    | `Number`  | The number of seconds until the device becomes fully charged.     |
-| dischargingTime | `Number`  | The number of seconds before the device becomes fully discharged. |
-| level           | `Number`  | A number between 0 and 1 representing the current charge level.   |
+| charging        | `Boolean` | 如果设备当前正在充电。                                                |
+| chargingTime    | `Number`  | 设备充满电之前的秒数。                                                |
+| dischargingTime | `Number`  | 设备完全放电前的秒数。                                                |
+| level           | `Number`  | 一个介于 0 和 1 之间的数字，表示当前充电水平。                           |
 
 ## Use-cases
 
-Our applications normally are not empathetic to battery level, we can make a few adjustments to our applications that will be more friendly to low battery users.
+我们的应用程序通常不会对电池电量产生同理心，我们可以对我们的应用程序进行一些调整，这将对电池电量不足的用户更加友好。
 
-- Trigger a special "dark-mode" battery saver theme settings.
-- Stop auto playing videos in news feeds.
-- Disable some background workers that are not critical.
-- Limit network calls and reduce CPU/Memory consumption.
+- 触发特殊的“暗黑模式”节电主题设置。
+- 停止在新闻提要中自动播放视频。
+- 禁用一些不重要的后台工作人员。
+- 限制网络调用并减少 CPU/内存消耗。
 
 
 ## Component Usage

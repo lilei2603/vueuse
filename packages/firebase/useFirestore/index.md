@@ -4,7 +4,7 @@ category: '@Firebase'
 
 # useFirestore
 
-Reactive [Firestore](https://firebase.google.com/docs/firestore) binding. Making it straightforward to **always keep your local data in sync** with remotes databases.
+响应式的 [Firestore](https://firebase.google.com/docs/firestore) 绑定。使**始终保持本地数据与远程数据库同步**变得简单。在附加组件 @vueuse/firebase 中可用。
 
 ## Usage
 
@@ -21,15 +21,15 @@ const todos = useFirestore(db.collection('todos'))
 const user = useFirestore(db.collection('users').doc('my-user-id'))
 ```
 
-## Share across instances
+## 跨实例共享
 
-You can reuse the db reference by passing `autoDispose: false`
+您可以通过传递 `autoDispose: false` 来重用 db 引用
 
 ```ts
 const todos = useFirestore(db.collection('todos'), undefined, { autoDispose: false })
 ```
 
-or use `createGlobalState` from the core package
+或使用核心包中的 `createGlobalState`
 
 ```js
 // store.js

@@ -4,9 +4,9 @@ category: Sensors
 
 # onLongPress
 
-Listen for a long press on an element.
+监听元素长按事件。
 
-Function provides modifiers in options
+函数在选项中提供修饰符
   * stop
   * once
   * prevent

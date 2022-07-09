@@ -4,7 +4,7 @@ category: Browser
 
 # useUrlSearchParams
 
-Reactive [URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams)
+响应式的 [URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams)
 
 ## Usage
 
@@ -22,7 +22,7 @@ params.vueuse = 'awesome'
 
 ### Hash Mode
 
-When using with hash mode route, specify the `mode` to `hash`
+使用 `hash` 路由模式时，指定 `hash` 模式
 
 ```js
 import { useUrlSearchParams } from '@vueuse/core'
@@ -36,7 +36,7 @@ params.vueuse = 'awesome'
 
 ### Hash Params
 
-When using with history mode route, but want to use hash as params, specify the `mode` to `hash-params`
+当使用 `history` 路由模式，但想使用 `hash` 作为参数时，将模式指定为 `hash-paramsWhen`。
 
 ```js
 import { useUrlSearchParams } from '@vueuse/core'

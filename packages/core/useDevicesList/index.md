@@ -4,7 +4,7 @@ category: Sensors
 
 # useDevicesList
 
-Reactive [enumerateDevices](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/enumerateDevices) listing avaliable input/output devices.
+响应式的 [enumerateDevices](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/enumerateDevices)。列出可用的输入/输出设备。
 
 ## Usage
 

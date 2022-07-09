@@ -4,7 +4,7 @@ category: Misc
 
 # useTimeAgo
 
-Reactive time ago.
+响应式的时间格式化函数，获取距离当前时间过去了多久。
 
 ## Usage
 

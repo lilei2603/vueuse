@@ -4,11 +4,11 @@ category: Misc
 
 # useWebWorkerFn
 
-Run expensive functions without blocking the UI, using a simple syntax that makes use of Promise. A port of [alewin/useWorker](https://github.com/alewin/useWorker).
+在不阻塞 UI 的情况下运行的函数，使用使用 `Promise` 的简单语法。 [alewin/useWorker](https://github.com/alewin/useWorker) 的一个端口。
 
 ## Usage
 
-### Basic example
+### 基本示例
 
 ```js
 import { useWebWorkerFn } from '@vueuse/core'
@@ -18,7 +18,7 @@ const { workerFn } = useWebWorkerFn(() => {
 })
 ```
 
-### With dependencies
+### 有依赖关系
 
 ```ts {7-9}
 import { useWebWorkerFn } from '@vueuse/core'
@@ -36,8 +36,8 @@ const { workerFn, workerStatus, workerTerminate } = useWebWorkerFn(
 
 ## Web Worker
 
-Before you start using this function, we suggest you read the [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) documentation.
+在开始使用此功能之前，我们建议您阅读 [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) 文档。
 
 ## Credit
 
-This function is a Vue port of https://github.com/alewin/useWorker by Alessio Koci, with the help of [@Donskelle](https://github.com/Donskelle) to migration.
+该功能是 Alessio Koci 的 https://github.com/alewin/useWorker 的 Vue 端口，在 [@Donskelle](https://github.com/Donskelle) 的帮助下进行迁移。

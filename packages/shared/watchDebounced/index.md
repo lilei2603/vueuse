@@ -5,11 +5,11 @@ alias: debouncedWatch
 
 # watchDebounced
 
-Debounced watch
+防抖的监听器
 
 ## Usage
 
-Similar to `watch`, but offering extra options `debounce` and `maxWait` which will be applied to the callback function.
+与 `watch` 类似，但提供额外的选项 `debounce` 和 `maxWait` 将应用于回调函数。
 
 ```ts
 import { watchDebounced } from '@vueuse/core'
@@ -21,7 +21,7 @@ watchDebounced(
 )
 ```
 
-It's essentially a shorthand for the following code:
+它本质上是以下代码的简写：
 
 ```ts
 import { debounceFilter, watchWithFilter } from '@vueuse/core'

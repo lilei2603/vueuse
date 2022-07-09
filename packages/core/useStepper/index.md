@@ -4,11 +4,11 @@ category: Utilities
 
 # useStepper
 
-Provides helpers for building a multi-step wizard interface.
+为构建多步骤向导界面提供帮助。
 
 ## Usage
 
-### Steps as array
+### 步骤作为数组
 
 ```js
 import { useStepper } from '@vueuse/core'
@@ -41,7 +41,7 @@ const {
 console.log(current.value) // 'billing-address'
 ```
 
-### Steps as object
+### 步骤作为对象
 
 ```js
 import { useStepper } from '@vueuse/core'

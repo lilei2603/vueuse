@@ -4,7 +4,7 @@ category: Utilities
 
 # useLastChanged
 
-Records the timestamp of the last change
+记录上次更改的时间戳
 
 ## Usage
 

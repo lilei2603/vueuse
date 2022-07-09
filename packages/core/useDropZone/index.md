@@ -4,7 +4,7 @@ category: Elements
 
 # useDropZone
 
-Create an zone where files can be dropped.
+创建一个可以删除文件的区域。
 
 ## Usage
 

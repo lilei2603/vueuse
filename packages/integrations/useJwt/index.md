@@ -4,7 +4,7 @@ category: '@Integrations'
 
 # useJwt
 
-wrapper for [`jwt-decode`](https://github.com/auth0/jwt-decode)
+[`jwt-decode`](https://github.com/auth0/jwt-decode) 的封装
 
 ## Install
 

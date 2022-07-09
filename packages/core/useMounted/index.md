@@ -4,7 +4,7 @@ category: Component
 
 # useMounted
 
-Mounted state in ref.
+响应式的 `Mounted` 状态
 
 ## Usage
 

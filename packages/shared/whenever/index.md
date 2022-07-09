@@ -4,7 +4,7 @@ category: Watch
 
 # whenever
 
-Shorthand for watching value to be truthy.
+监听真实值的简写形式
 
 ## Usage
 
@@ -31,9 +31,9 @@ watch(ready, (isReady) => {
 })
 ```
 
-### Callback Function
+### 回调函数
 
-Same as `watch`, the callback will be called with `cb(value, oldValue, onInvalidate)`.
+和 `watch` 一样，回调会被调用 `cb(value`, `oldValue`, `onInvalidate`)。
 
 ```ts
 whenever(height, (current, lastHeight) => {
@@ -43,9 +43,9 @@ whenever(height, (current, lastHeight) => {
 })
 ```
 
-### Computed
+### 计算
 
-Same as `watch`, you can pass a getter function to calculate on each change.
+与 `watch` 一样，您可以传递一个 getter 函数来计算每次更改。
 
 ```ts
 // this
@@ -55,9 +55,9 @@ whenever(
 )
 ```
 
-### Options
+### 选项
 
-Options and defaults are same with `watch`.
+选项和默认值与 `watch` 相同。
 
 ```ts
 // this

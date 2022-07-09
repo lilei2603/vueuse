@@ -4,7 +4,7 @@ category: Utilities
 
 # useTimeoutPoll
 
-Use timeout to poll something. It's will trigger callback after last task is done.
+使用超时来轮询某些东西。最后一个任务完成后会触发回调。
 
 ## Usage
 

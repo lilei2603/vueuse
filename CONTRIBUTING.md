@@ -1,57 +1,57 @@
-# Contributing
+# 贡献
 
-Thanks for being interested in contributing to this project!
+感谢您有兴趣为这个项目做出贡献！
 
-## Development 
+## 开发 
 
-### Setup
+### 安装
 
-Clone this repo to your local machine and install the dependencies.
+将此 repo 克隆到您的本地计算机并安装依赖项。
 
 ```bash
 pnpm install
 ```
 
-We use VitePress for rapid development and documenting. You can start it locally by
+我们使用 VitePress 进行快速开发和记录。您可以通过以下方式在本地启动它
 
 ```bash
 pnpm dev
 ```
 
-## Contributing
+## 贡献
 
-### Existing functions
+### 现有功能
 
-Feel free to enhance the existing functions. Please try not to introduce breaking changes.
+随意增强现有功能。请尽量不要引入重大更改。
 
-### New functions
+### 新功能
 
-There are some notes for adding new functions
+添加新功能有一些注意事项
 
-- Before you start working, it's better to open an issue to discuss first.
-- The implementation should be placed under `packages/core` as a folder and exposing in `index.ts`
-- In the `core` package, try not to introduce 3rd-party dependencies as this package is aimed to be as lightweight as possible.
-- If you'd like to introduce 3rd-party dependencies, please contribute to @vueuse/integrations or create a new add-on.
-- You can find the function template under `packages/core/_template/`, details explained in the [Function Folder](#function-folder) section.
-- When writing documentation for your function, the `<!--FOOTER_STARTS-->` and `<!--FOOTER_ENDS-->` will be automatically updated at build time, so don't feel the need to update them.
+- 在开始工作之前，最好先打开一个问题进行讨论。
+- 实现应作为文件夹放在 `packages/core` 下并在 `index.ts` 中公开
+- 在 core 包中，尽量不要引入 第三方工具 依赖，因为这个包的目标是尽可能的轻量级。
+- 如果您想引入 第三方工具 依赖项，请向 `@vueuse/integrations` 贡献或创建一个新的附加组件。
+- 您可以在 packages/core/_template/ 下找到函数模板，详细信息请参见[函数文件夹](#function-folder)部分。
+- 在为您的函数编写文档时，`<!--FOOTER_STARTS-->` 和 `<!--FOOTER_ENDS-->` 将在构建时自动更新，因此无需更新它们。
 
-> Please note you don't need to update packages' `index.ts`. They are auto-generated.
+> 请注意，您不需要更新包的 `index.ts`。它们是自动生成的。
 
-### New add-ons
+### 新的附加组件
 
-New add-ons are greatly welcome!
+非常欢迎添加新的附加组件！
 
-- Create a new folder under `packages/`, name it as your add-on name. 
-- Add add-on details in `scripts/packages.ts`
-- Create `README.md` under that folder.
-- Add functions as you would do to the core package.
-- Commit and submit as a PR.
+- 在 `packages/` 下创建一个新文件夹，将其命名为您的插件名称。
+- 在 `scripts/packages.ts` 中添加附加组件详细信息
+- 在该文件夹下创建 `README.md`。
+- 像对核心包所做的那样添加功能。
+- 提交并作为 PR 提交。
 
-## Project Structure
+## 项目结构
 
 ### Monorepo
 
-We use monorepo for multiple packages
+我们对多个包使用 monorepo
 
 ```
 packages
@@ -61,43 +61,43 @@ packages
   [...addons]/    - add-ons named
 ```
 
-### Function Folder
+### 函数文件夹
 
-A function folder typicality contains these 4 files:
+函数文件夹典型性包含以下 4 个文件：
 
-> You can find the template under `packages/core/_template/`
+> 您可以在 `packages/core/_template/` 下找到模板
 
 ```bash
-index.ts            # function source code itself
-demo.vue            # documentation demo
-index.test.ts       # vitest unit testing
-index.md            # documentation
+index.ts            # 函数源代码本身
+demo.vue            # 功能演示
+index.test.ts       # vitest 单元测试用例
+index.md            # 文档说明
 ```
 
-for `index.ts` you should export the function with names.
+对于 `index.ts`，您应该使用名称导出函数。
 
 ```ts
-// DO
+// 推荐
 export { useMyFunction }
 
-// DON'T
+// 不推荐
 export default useMyFunction
 ```
 
-for `index.md` the first sentence will be displayed as the short intro in the function list, so try to keep it brief and clear.
+对于 `index.md`，第一句将在函数列表中显示为简短的介绍，因此请尽量保持简洁明了。
 
 ```md
 # useMyFunction
 
-This will be the intro. The detail descriptions...
+这将是介绍。详细说明...
 ```
 
-Read more about the [guidelines](https://vueuse.org/guidelines).
+阅读有关[指南](https://vueuse.org/guidelines).的更多信息。
 
-## Code Style
+## 代码风格
 
-Don't worry about the code style as long as you install the dev dependencies. Git hooks will format and fix them for you on committing.
+只要安装了开发依赖项，就不用担心代码风格。 Git 挂钩将在提交时为您格式化和修复它们。
 
-## Thanks
+## 鸣谢
 
-Thank you again for being interested in this project! You are awesome!
+再次感谢您对本项目感兴趣！你太棒了！

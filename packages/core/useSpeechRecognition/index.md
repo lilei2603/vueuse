@@ -4,9 +4,9 @@ category: Sensors
 
 # useSpeechRecognition
 
-Reactive [SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition).
+响应式的 [SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition).
 
-> [Can I use?](https://caniuse.com/mdn-api_speechrecognition)
+> [是否支持？](https://caniuse.com/mdn-api_speechrecognition)
 
 ## Usage
 
@@ -25,7 +25,7 @@ const {
 
 ### Options
 
-The following shows the default values of the options, they will be directly passed to [SpeechRecognition API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition).
+下面显示了选项的默认值，它们将直接传递给 [SpeechRecognition API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)。
 
 ```ts
 useSpeechRecognition({

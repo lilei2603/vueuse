@@ -4,6 +4,6 @@ category: State
 
 # useStorageAsync
 
-Reactive Storage in with async support.
+支持异步的响应式存储。
 
-Please refer to `useStorage`.
+请参考使用`useStorage`.

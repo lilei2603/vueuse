@@ -5,7 +5,7 @@ related: useUserMedia
 
 # useDisplayMedia
 
-Reactive [`mediaDevices.getDisplayMedia`](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia) streaming.
+响应式的 [`mediaDevices.getDisplayMedia`](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia) 流式传输。
 
 ## Usage
 

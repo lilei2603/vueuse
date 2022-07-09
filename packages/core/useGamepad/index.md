@@ -4,11 +4,11 @@ category: Browser
 
 # useGamepad
 
-Provides reactive bindings for the [Gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API).
+为 [Gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API) 提供响应式绑定。
 
 ## Usage
 
-> Due to how the Gamepad API works, you must interact with the page using the gamepad before it will be detected.
+> 由于游戏手柄 API 的工作方式，您必须使用游戏手柄与页面进行交互才能检测到它。
 
 ```html
 <script setup>
@@ -27,23 +27,23 @@ const gamepad = computed(() => gamepads.find(g => g.mapping === 'standard'))
 
 ### Gamepad Updates
 
-Currently the Gamepad API does not have event support to update the state of the gamepad. To update the gamepad state, `requestAnimationFrame` is used to poll for gamepad changes. You can control this polling by using the `pause` and `resume` functions provided by `useGamepad`
+目前 Gamepad API 不支持更新游戏手柄状态的事件。为了更新游戏手柄状态，`requestAnimationFrame` 用于轮询游戏手柄的变化。 您可以使用 `useGamepad` 提供的 `暂停` 和 `恢复` 功能来控制此轮询
 
 ```ts
 const { pause, resume, gamepads } = useGamepad()
 
 pause()
 
-// gamepads object will not update
+// 游戏手柄对象不会更新
 
 resume()
 
-// gamepads object will update on user input
+// 游戏手柄对象将根据用户输入进行更新
 ```
 
 ### Gamepad Connect & Disconnect Events
 
-The `onConnected` and `onDisconnected` events will trigger when a gamepad is connected or disconnected.
+`onConnected` 和 `onDisconnected` 事件将在游戏手柄连接或断开连接时触发。
 
 ```ts
 const { gamepads, onConnected, onDisconnected } = useGamepad()
@@ -59,7 +59,7 @@ onDisconnected((index) => {
 
 ### Vibration
 
-> The Gamepad Haptics API is sparse, so check the [compatibility table](https://developer.mozilla.org/en-US/docs/Web/API/GamepadHapticActuator#browser_compatibility) before using.
+> Gamepad Haptics API 是稀疏的，因此在使用前请检查 [兼容性](https://developer.mozilla.org/en-US/docs/Web/API/GamepadHapticActuator#browser_compatibility)。 
 
 ```ts
 const supportsVibration = computed(() => gamepad.hapticActuators.length > 0)
@@ -78,7 +78,7 @@ const vibrate = () => {
 
 ### Mappings
 
-To make the Gamepad API easier to use, we provide mappings to map a controller to a controllers button layout.
+为了使 Gamepad API 更易于使用，我们提供了将控制器映射到控制器按钮布局的映射。
 
 #### Xbox360 Controller
 
@@ -97,4 +97,4 @@ const controller = mapGamepadToXbox360Controller(gamepad)
 </template>
 ```
 
-Currently there are only mappings for the Xbox 360 controller. If you have controller you want to add mappings for, feel free to open a PR for more controller mappings!
+目前只有 Xbox 360 控制器的映射。如果您有想要为其添加映射的控制器，请随时打开 PR 以获取更多控制器映射！

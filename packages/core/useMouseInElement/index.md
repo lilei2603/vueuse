@@ -4,7 +4,7 @@ category: Elements
 
 # useMouseInElement
 
-Reactive mouse position related to an element
+获取响应式的元素对应鼠标位置信息
 
 ## Usage
 

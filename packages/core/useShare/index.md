@@ -4,9 +4,9 @@ category: Browser
 
 # useShare
 
-Reactive [Web Share API](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share). The Browser provides features that can share content in text or file.
+响应式的 [Web Share API](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share)。浏览器提供可以共享文本或文件内容的功能。
 
-> The `share` method has to be called following a user gesture like a button click. It can’t simply be called on page load for example. That’s in place to help prevent abuse.
+> 必须按照用户手势（如按钮单击）调用 `share` 方法。例如，不能简单地在页面加载时调用它。这是为了防止滥用。
 
 ## Usage
 
@@ -27,7 +27,7 @@ function startShare() {
 
 ### Passing a source ref
 
-You can pass a `ref` to it, changes from the source ref will be reflected to your sharing options.
+您可以将 `ref` 传递给它，源 `ref` 的更改将反映到您的共享选项中。
 
 ```js {7}
 import { ref } from 'vue'

@@ -4,7 +4,7 @@ category: State
 
 # useAsyncState
 
-Reactive async state. Will not block your setup function and will trigger changes once the promise is ready.
+响应式的异步状态。不会阻止您的设置功能，并会在承诺准备就绪后触发更改。
 
 ## Usage
 

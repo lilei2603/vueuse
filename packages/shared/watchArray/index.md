@@ -4,11 +4,11 @@ category: Watch
 
 # watchArray
 
-Watch for an array with additions and removals.
+监听对于数组的添加和删除操作
 
 ## Usage
 
-Similar to `watch`, but provides the added and removed elements to the callback function. Pass `{ deep: true }` if the list is updated in place with `push`, `splice`, etc.
+与 `watch` 类似，但向回调函数提供添加和删除的元素。如果列表通过 `push`、`splice` 等就地更新，则传递 `{ deep: true }`。
 
 ```ts
 import { watchArray } from '@vueuse/core'

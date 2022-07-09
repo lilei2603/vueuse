@@ -4,11 +4,11 @@ category: Browser
 
 # useMediaControls
 
-Reactive media controls for both `audio` and `video` elements
+`音频` 和 `视频` 元素的反应式媒体控件
 
 ## Usage
 
-### Basic Usage
+### 基本用法
 ```html
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
@@ -34,11 +34,7 @@ onMounted(() => {
 ```
 
 ### Providing Captions, Subtitles, etc...
-You can provide captions, subtitles, etc in the `tracks` options of the
-`useMediaControls` function. The function will return an array of tracks
-along with two functions for controlling them, `enableTrack`, `disableTrack`, and `selectedTrack`.
-Using these you can manage the currently selected track. `selectedTrack` will
-be `-1` if there is no selected track.
+您可以在 `useMediaControls` 功能的 `轨道` 选项中提供字幕、字幕等。该函数将返回一个轨道数组以及用于控制它们的两个函数 `enableTrack`、`disableTrack` 和 `selectedTrack`。使用这些您可以管理当前选择的曲目。如果没有选定的轨道，则 `selectedTrack` 将为 `-1`。
 
 ```html
 <script setup lang="ts">

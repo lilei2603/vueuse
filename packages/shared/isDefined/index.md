@@ -4,7 +4,7 @@ category: Utilities
 
 # isDefined
 
-Non-nullish checking type guard for Ref.
+响应式数据的非空值检查类型保护
 
 ## Usage
 

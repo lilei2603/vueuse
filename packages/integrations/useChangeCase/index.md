@@ -4,7 +4,7 @@ category: '@Integrations'
 
 # useChangeCase
 
-wrapper for [`change-case`](https://github.com/blakeembrey/change-case)
+[`change-case`](https://github.com/blakeembrey/change-case) 的封装
 
 ## Install
 
@@ -38,9 +38,9 @@ changeCase.value // vueUse
 // } from 'change-case'
 ```
 
-or passing a `ref` to it, the returned `computed` will change along with the source ref's changes.
+或将 ref 传递给它，返回的计算值将随着源 ref 的变化而变化。
 
-Can be passed into `options` for customization
+可以传递给自定义选项
 
 ```ts
 import { ref } from 'vue-demi'

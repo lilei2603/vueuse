@@ -4,7 +4,7 @@ category: '@Integrations'
 
 # useDrauu
 
-Reactive instance for [drauu](https://github.com/antfu/drauu)
+[drauu](https://github.com/antfu/drauu) 的响应式实例
 
 ## Usage
 

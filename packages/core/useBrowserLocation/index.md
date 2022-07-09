@@ -4,9 +4,9 @@ category: Browser
 
 # useBrowserLocation
 
-Reactive browser location
+响应式浏览器位置
 
-> NOTE: If you're using Vue Router, use [`useRoute`](https://router.vuejs.org/guide/advanced/composition-api.html) provided by Vue Router instead.
+> 注意：如果您使用的是 Vue Router，请改用 Vue Router 提供的 [`useRoute`](https://router.vuejs.org/guide/advanced/composition-api.html)。
 
 ## Usage
 

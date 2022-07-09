@@ -5,7 +5,7 @@ alias: controlledComputed
 
 # computedWithControl
 
-Explicitly define the dependencies of computed.
+明确定义计算的依赖关系
 
 ## Usage
 
@@ -21,7 +21,7 @@ const computedRef = computedWithControl(
 )
 ```
 
-With this, the changes of `counter` won't trigger `computedRef` to update but the `source` ref does.
+这样，计数器的更改不会触发 `computedRef` 更新，但源 ref 会。
 
 ```ts
 console.log(computedRef.value) // 0
@@ -35,11 +35,11 @@ source.value = 'bar'
 console.log(computedRef.value) // 1
 ```
 
-### Manual Triggering
+### 手动触发
 
-> This only works in Vue 3
+> 仅适用于 Vue 3
 
-You can also manually trigger the update of the computed by:
+您还可以通过以下方式手动触发计算的更新：
 
 ```ts
 const computedRef = computedWithControl(

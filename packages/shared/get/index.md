@@ -4,7 +4,7 @@ category: Utilities
 
 # get
 
-Shorthand for accessing `ref.value`
+访问 `ref.value` 的简写
 
 ## Usage
 

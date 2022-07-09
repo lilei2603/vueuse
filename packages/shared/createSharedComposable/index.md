@@ -4,7 +4,7 @@ category: State
 
 # createSharedComposable
 
-Make a composable function usable with multiple Vue instances.
+使可组合函数可用于多个 Vue 实例。
 
 ## Usage
 

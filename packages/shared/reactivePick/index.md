@@ -4,7 +4,7 @@ category: Utilities
 
 # reactivePick
 
-Reactively pick fields from a reactive object.
+从响应性对象中选择字段。
 
 ## Usage
 
@@ -21,9 +21,9 @@ const obj = reactive({
 const picked = reactivePick(obj, 'x', 'elementX') // { x: number, elementX: number }
 ```
 
-### Scenarios
+### 场景
 
-#### Selectively passing props to child
+#### 有选择地将道具传递给子组件
 
 ```html
 <script setup>
@@ -52,9 +52,9 @@ const childProps = reactivePick(props, 'color', 'font')
 </template>
 ```
 
-#### Selectively wrap reactive object
+#### 选择性地包装响应式对象
 
-Instead of doing this
+而不是这样做
 
 ```ts
 import { reactive } from 'vue'
@@ -64,7 +64,7 @@ const { height, width } = useElementBounding() // object of refs
 const size = reactive({ height, width })
 ```
 
-Now we can just have this
+现在我们可以拥有这个
 
 ```ts
 import { reactivePick, useElementBounding } from '@vueuse/core'

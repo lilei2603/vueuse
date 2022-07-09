@@ -1,16 +1,16 @@
-# Components
+# 组件
 
-In v5.0, we introduced a new package, `@vueuse/components` providing renderless component versions of composable functions.
+在 v5.0 中，我们引入了一个新的包，`@vueuse/components` 提供了可组合函数的无渲染组件版本。
 
-## Install
+## 安装
 
 ```bash
 $ npm i @vueuse/core @vueuse/components
 ```
 
-## Usage
+## 用法
 
-For example of `onClickOutside`, instead of binding the component ref for functions to consume:
+例如 `onClickOutside` 而不是绑定组件 ref 以供函数使用：
 
 ```html
 <script setup>
@@ -33,7 +33,7 @@ onClickOutside(el, close)
 </template>
 ```
 
-We can now use the renderless component which the binding is done automatically:
+我们现在可以使用自动完成绑定的无渲染组件：
 
 ```html
 <script setup>
@@ -53,9 +53,9 @@ function close () {
 </template>
 ```
 
-## Return Value
+## 返回值
 
-You can access return values with `v-slot`:
+您可以使用 `v-slot` 访问返回值： 
 
 ```html
 <UseMouse v-slot="{ x, y }">
@@ -72,4 +72,4 @@ You can access return values with `v-slot`:
 </UseDark>
 ```
 
-Refer to each function's documentation for the detailed usage of component style.
+组件样式的详细使用请参考各个函数的文档。

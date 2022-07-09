@@ -4,7 +4,7 @@ category: Sensors
 
 # useParallax
 
-Create parallax effect easily. It uses `useDeviceOrientation` and fallback to `useMouse` if orientation is not supported.
+轻松创建视差效果。如果不支持方向，它使用 `useDeviceOrientation` 并回退到 `useMouse`。
 
 ## Usage
 

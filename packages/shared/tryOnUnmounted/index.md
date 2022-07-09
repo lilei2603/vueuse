@@ -4,7 +4,7 @@ category: Component
 
 # tryOnUnmounted
 
-Safe `onUnmounted`. Call `onUnmounted()` if it's inside a component lifecycle, if not, do nothing
+安全 `onUnmounted`。如果它在组件生命周期内，则调用 `onUnmounted()`，如果不是，则不执行任何操作。
 
 ## Usage
 

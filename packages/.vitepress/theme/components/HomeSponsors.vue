@@ -1,6 +1,6 @@
 <template>
   <h2 op50 font-normal pt-5 pb-2>
-    Anthony's Sponsors
+    赞助商
   </h2>
   <p id="sponsor" class="mt-5 text-center">
     <a href="https://github.com/sponsors/antfu">

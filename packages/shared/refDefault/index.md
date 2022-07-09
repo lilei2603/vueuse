@@ -4,7 +4,7 @@ category: Utilities
 
 # refDefault
 
-Apply default value to a ref.
+设置响应式数据的默认值
 
 ## Usage
 

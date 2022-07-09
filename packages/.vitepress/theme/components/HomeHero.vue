@@ -36,7 +36,7 @@ const heroText = computed(() => frontmatter.value.heroText || site.value.title)
       <br>
     </p>
     <div class="description mx-auto -mt-8 mb-2">
-      Collection of essential Vue Composition Utilities
+      实用的Vue组合式函数集合
     </div>
 
     <div class="mb-15 flex gap-1 place-content-center">
@@ -46,8 +46,8 @@ const heroText = computed(() => frontmatter.value.heroText || site.value.title)
     </div>
 
     <p class="actions flex gap-2 place-content-center">
-      <a class="get-started" href="/guide/">Get Started <carbon:arrow-right class="icon" /></a>
-      <a class="setup" href="/functions">All Functions</a>
+      <a class="get-started" href="/guide/">快速开始 <carbon:arrow-right class="icon" /></a>
+      <a class="setup" href="/functions">所有方法</a>
       <a class="setup" href="https://github.com/vueuse/vueuse" target="_blank"><carbon:logo-github class="icon" /> GitHub</a>
     </p>
   </header>

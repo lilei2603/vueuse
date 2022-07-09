@@ -4,7 +4,7 @@ category: Elements
 
 # useElementBounding
 
-Reactive [bounding box](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect) of an HTML element
+响应式的html [边界盒子](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect) 元素
 
 ## Usage
 
@@ -31,7 +31,7 @@ export default {
 </script>
 ```
 
-## Component Usage
+## 组件用法
 
 ```html
 <UseElementBounding v-slot="{ width, height }">

@@ -4,9 +4,9 @@ category: Utilities
 
 # useDebounceFn
 
-Debounce execution of a function.
+防抖函数
 >
-> Debounce is an overloaded waiter: if you keep asking him your requests will be ignored until you stop and give him some time to think about your latest inquiry.
+> Debounce 是一个超负荷的服务员：如果你一直问他，你的请求将被忽略，直到你停下来给他一些时间考虑你最近的询问。
 
 ## Usage
 
@@ -20,7 +20,7 @@ const debouncedFn = useDebounceFn(() => {
 document.addEventListener('resize', debouncedFn)
 ```
 
-You can also pass a 3rd parameter to this, with a maximum wait time, similar to [lodash debounce](https://lodash.com/docs/4.17.15#debounce)
+你也可以传递第三个参数给它，最大等待时间，类似于 [lodash debounce](https://lodash.com/docs/4.17.15#debounce)
 
 ```js
 import { useDebounceFn } from '@vueuse/core'
@@ -34,13 +34,13 @@ const debouncedFn = useDebounceFn(() => {
 document.addEventListener('resize', debouncedFn)
 ```
 
-## Related Functions
+## 相关功能
 
 - `useThrottle`
 - `useThrottleFn`
 - `useDebounce`
 - `useDebounceFn`
 
-## Recommended Reading
+## 推荐阅读
 
 - [**Debounce vs Throttle**: Definitive Visual Guide](https://redd.one/blog/debounce-vs-throttle)

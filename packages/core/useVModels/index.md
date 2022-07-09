@@ -4,7 +4,7 @@ category: Component
 
 # useVModels
 
-Shorthand for props v-model binding. Think it like `toRefs(props)` but changes will also trigger emit.
+给props绑定v-model的简写。相当于 `toRefs(props)`，但更改也会触发发射。
 
 ## Usage
 
@@ -25,6 +25,6 @@ export default {
 }
 ```
 
-## Related Functions
+## 相关功能
 
 - `useVModel`

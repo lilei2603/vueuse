@@ -4,7 +4,7 @@ category: '@Integrations'
 
 # useAsyncValidator
 
-wrapper for [`async-validator`](https://github.com/yiminghe/async-validator)
+[`async-validator`](https://github.com/yiminghe/async-validator) 的封装
 
 ## Install 
 

@@ -4,7 +4,7 @@ category: Utilities
 
 # useToggle
 
-A boolean switcher with utility functions.
+具有实用功能的布尔切换器。
 
 ## Usage
 

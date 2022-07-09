@@ -1,7 +1,7 @@
 <template>
   <blockquote>
     <p>
-      This function also provides a renderless component version via the <code>@vueuse/components</code> package. <a href="/guide/components">Learn more about the usage</a>.
+      这个函数还通过 <code>@vueuse/components</code> 包提供了一个无渲染的组件版本。<a href="/guide/components">了解更多关于使用的信息</a>。
     </p>
   </blockquote>
 </template>

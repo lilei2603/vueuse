@@ -4,7 +4,7 @@ category: Browser
 
 # useBreakpoints
 
-Reactive viewport breakpoints
+响应式断点
 
 ## Usage
 

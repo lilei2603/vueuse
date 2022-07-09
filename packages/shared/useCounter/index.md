@@ -4,7 +4,7 @@ category: Utilities
 
 # useCounter
 
-Basic counter with utility functions.
+实用的基础计数器。
 
 ## Basic Usage
 

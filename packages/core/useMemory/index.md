@@ -4,7 +4,7 @@ category: Browser
 
 # useMemory
 
-Reactive Memory Info.
+响应式的内存信息
 
 ## Usage
 

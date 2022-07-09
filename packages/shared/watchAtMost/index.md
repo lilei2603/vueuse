@@ -4,11 +4,11 @@ category: Watch
 
 # watchAtMost
 
-`watch` with the number of times triggered.
+监听器被触发的次数限制。
 
 ## Usage
 
-Similar to `watch` with an extra option `count` which set up the number of times the callback function is triggered. After the count is reached, the watch will be stopped automatically.
+类似于 `watch` 带有一个额外的选项计数，它设置了回调函数被触发的次数。达到计数后，手表将自动停止。
 
 ```ts
 import { watchAtMost } from '@vueuse/core'

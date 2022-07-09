@@ -4,7 +4,8 @@ category: '@RxJS'
 
 # from / fromEvent
 
-> Two wrappers around of the original functions to allow use ref objects
+> 原始函数的两个包装器以允许使用 ref 对象
+
 
 ## Usage
 

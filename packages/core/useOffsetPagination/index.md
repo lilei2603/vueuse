@@ -4,7 +4,7 @@ category: Utilities
 
 # useOffsetPagination
 
-Reactive offset pagination.
+响应式的分页偏移量
 
 ## Usage
 
@@ -88,9 +88,9 @@ const {
 </UseOffsetPagination>
 ```
 
-Component event supported props event callback and event listener.
+组件事件支持 props 事件回调和事件监听器。
 
-event listener:
+事件监听：
 ```html
 <UseOffsetPagination
   v-slot="{
@@ -111,7 +111,7 @@ event listener:
 </UseOffsetPagination>
 ```
 
-or props event callback:
+或 `props` 事件回调
 
 ```html
 <UseOffsetPagination

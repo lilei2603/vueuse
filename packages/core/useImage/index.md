@@ -4,7 +4,7 @@ category: Browser
 
 # useImage
 
-Reactive load an image in the browser, you can wait the result to display it or show a fallback.
+在浏览器中响应式加载图像，您可以等待结果显示它或显示后备。
 
 ## Usage
 

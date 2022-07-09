@@ -4,7 +4,7 @@ category: Elements
 
 # useMutationObserver
 
-Watch for changes being made to the DOM tree. [MutationObserver MDN](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
+注意对 DOM 树所做的更改。[MutationObserver MDN](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
 
 ## Usage
 

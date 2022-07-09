@@ -4,7 +4,7 @@ category: Component
 
 # templateRef
 
-Shorthand for binding ref to template element.
+将 ref 绑定到模板元素的简写。
 
 ## Usage
 
@@ -26,7 +26,7 @@ export default {
 </template>
 ```
 
-### With JSX/TSX
+### 使用 JSX/TSX
 
 ```tsx
 import { templateRef } from '@vueuse/core'
@@ -43,7 +43,7 @@ export default {
 
 ### `<script setup>`
 
-There is no need for this when using with `<script setup>` since all the variables will be exposed to the template. It will be exactly the same as `ref`.
+与 `<script setup>` 一起使用时不需要这样做，因为所有变量都将暴露给模板。它将与 `ref` 完全相同。
 
 ```vue
 <script setup lang="ts">

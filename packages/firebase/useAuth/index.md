@@ -4,8 +4,7 @@ category: '@Firebase'
 
 # useAuth
 
-Reactive [Firebase Auth](https://firebase.google.com/docs/auth) binding. It provides a reactive `user` and `isAuthenticated` so you
-can easily react to changes in the users' authentication status. 
+响应式的 [Firebase Auth](https://firebase.google.com/docs/auth) 身份验证绑定。它提供了响应式 `user` 和 `isAuthenticated`，因此您可以轻松地对用户身份验证状态的变化做出反应。在附加组件 @vueuse/firebase 中可用 。
 
 ## Usage
 

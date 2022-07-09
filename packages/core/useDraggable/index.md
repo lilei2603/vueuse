@@ -4,7 +4,7 @@ category: Elements
 
 # useDraggable
 
-Make elements draggable.
+使元素可拖动。
 
 ## Usage
 
@@ -36,7 +36,7 @@ const { x, y, style } = useDraggable(el, {
 </UseDraggable>
 ```
 
-For component usage, additional props `storageKey` and `storageType` can be passed to the component and enable the persistence of the element position.
+对于组件使用，可以将额外的 props `storageKey` 和 `storageType` 传递给组件并启用元素位置的持久化。
 
 ```html
 <UseDraggable storage-key="vueuse-draggable" storage-type="session">

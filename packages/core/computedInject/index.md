@@ -4,11 +4,11 @@ category: Component
 
 # computedInject
 
-Combine computed and inject
+结合计算和注入
 
 ## Usage
 
-In Provider Component
+在提供者组件中
 ```ts
 import type { InjectionKey, Ref } from 'vue-demi'
 import { provide, ref } from 'vue-demi'
@@ -25,7 +25,7 @@ const array = ref([{ key: 1, value: '1' }, { key: 2, value: '2' }, { key: 3, val
 provide(ArrayKey, array)
 ```
 
-In Receiver Component
+在接收器组件中
 ```ts
 import { computedInject } from '@vueuse/core'
 

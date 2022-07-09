@@ -4,7 +4,7 @@ category: Utilities
 
 # reactiveComputed
 
-Computed reactive object. Instead of returning a ref that `computed` does, `reactiveComputed` returns a reactive object.
+响应式计算属性。 `reactiveComputed` 不是返回一个计算的 `ref`，而是返回一个响应式对象。
 
 <RequiresProxy />
 

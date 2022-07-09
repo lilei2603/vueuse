@@ -4,7 +4,7 @@ category: Utilities
 
 # useClamp
 
-Reactively clamp a value between two other values.
+将一个值夹在其他两个值之间，并且是响应式的。
 
 ## Usage
 

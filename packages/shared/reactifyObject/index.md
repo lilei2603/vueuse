@@ -4,7 +4,7 @@ category: Utilities
 
 # reactifyObject
 
-Apply `reactify` to an object
+将 `reactify` 应用于对象
 
 ## Usage
 
@@ -15,5 +15,5 @@ const reactifiedConsole = reactifyObject(console)
 
 const a = ref('42')
 
-reactifiedConsole.log(a) // no longer need `.value`
+reactifiedConsole.log(a) // 不再需要`.value`
 ```

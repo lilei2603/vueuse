@@ -4,7 +4,7 @@ category: Animation
 
 # useIntervalFn
 
-Wrapper for `setInterval` with controls
+封装了 `setInterval` 。
 
 ## Usage
 

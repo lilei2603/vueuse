@@ -4,7 +4,7 @@ category: Sensors
 
 # usePointer
 
-Reactive [pointer state](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events).
+响应式的 [pointer state](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events).
 
 ## Basic Usage
 
@@ -16,7 +16,7 @@ const { x, y, pressure, pointerType } = usePointer()
 
 ## Component Usage
 
-By default, the component will track the pointer on `window`
+默认情况下，组件将跟踪 `window` 上的指针
 
 ```html
 <UsePointer v-slot="{ x, y }">
@@ -25,7 +25,7 @@ By default, the component will track the pointer on `window`
 </UsePointer>
 ```
 
-To track local position in the element, set `target="self"`:
+要跟踪元素中的本地位置，请设置 `target="self"`：
 
 ```html
 <UsePointer target="self" v-slot="{ x, y }">

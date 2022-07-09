@@ -4,7 +4,7 @@ category: Utilities
 
 # useCycleList
 
- Cycle through a list of items.
+循环浏览列表。
 
 ## Usage
 

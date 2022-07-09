@@ -5,7 +5,7 @@ related: syncRefs
 
 # syncRef
 
-Two-way refs synchronization.
+双向同步的响应式数据
 
 ## Usage
 
@@ -28,7 +28,7 @@ a.value = 'bar'
 console.log(b.value) // bar
 ```
 
-One directional
+单向
 
 ```ts
 import { syncRef } from '@vueuse/core'

@@ -4,7 +4,7 @@ category: State
 
 # useManualRefHistory
 
-Manually track the change history of a ref when the using calls `commit()`, also provides undo and redo functionality
+在调用 `commit()` 时手动跟踪 ref 的更改历史，还提供撤消和重做功能
 
 ## Usage
 
@@ -25,7 +25,7 @@ console.log(history.value)
 ] */
 ```
 
-You can use `undo` to reset the ref value to the last history point.
+您可以使用 `undo` 将 ref 值重置为最后一个历史记录点。
 
 ```ts
 console.log(counter.value) // 1
@@ -33,9 +33,9 @@ undo()
 console.log(counter.value) // 0
 ```
 
-#### History of mutable objects
+#### 可变对象的历史
 
-If you are going to mutate the source, you need to pass a custom clone function or use `clone` `true` as a param, that is a shortcut for a minimal clone function `x => JSON.parse(JSON.stringify(x))` that will be used in both `dump` and `parse`.
+如果要更改源，则需要传递自定义克隆函数或使用 `clone` `true` 作为参数，这是最小克隆函数 `x => JSON.parse(JSON.stringify(x))` 的快捷方式，它将用于 `转储` 和 `解析`。
 
 ```ts {5}
 import { ref } from 'vue'
@@ -48,11 +48,11 @@ counter.value.foo += 1
 commit()
 ```
 
-#### Custom Clone Function
+#### 自定义克隆功能
 
-To use a full featured or custom clone function, you can set up via the `dump` options.
+要使用全功能或自定义克隆功能，您可以通过 `转储` 选项进行设置。
 
-For example, using [structuredClone](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone):
+例如, 使用 [structuredClone](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone):
 
 ```ts
 import { cloneDeep } from 'lodash-es'
@@ -60,7 +60,7 @@ import { cloneDeep } from 'lodash-es'
 const refHistory = useManualRefHistory(target, { clone: structuredClone })
 ```
 
-Or by using [lodash's `cloneDeep`](https://lodash.com/docs/4.17.15#cloneDeep):
+或者使用 [lodash's `cloneDeep`](https://lodash.com/docs/4.17.15#cloneDeep):
 
 ```ts
 import { cloneDeep } from 'lodash-es'
@@ -69,7 +69,7 @@ import { useManualRefHistory } from '@vueuse/core'
 const refHistory = useManualRefHistory(target, { clone: cloneDeep })
 ```
 
-Or a more lightweight [`klona`](https://github.com/lukeed/klona):
+或者使用更轻量级的 [`klona`](https://github.com/lukeed/klona):
 
 ```ts
 import { klona } from 'klona'
@@ -78,9 +78,9 @@ import { useManualRefHistory } from '@vueuse/core'
 const refHistory = useManualRefHistory(target, { clone: klona })
 ```
 
-#### Custom Dump and Parse Function
+#### 自定义转储和解析功能
 
-Instead of using the `clone` param, you can pass custom functions to control the serialization and parsing. In case you do not need history values to be objects, this can save an extra clone when undoing. It is also useful in case you want to have the snapshots already stringified to be saved to local storage for example.
+您可以传递自定义函数来控制序列化和解析，而不是使用 `clone` 参数。如果您不需要历史值作为对象，这可以在撤消时节省额外的克隆。例如，如果您希望将已字符串化的快照保存到本地存储，它也很有用。
 
 ```ts
 import { useManualRefHistory } from '@vueuse/core'
@@ -91,9 +91,9 @@ const refHistory = useManualRefHistory(target, {
 })
 ```
 
-### History Capacity
+### 历史容量
 
-We will keep all the history by default (unlimited) until you explicitly clear them up, you can set the maximal amount of history to be kept by `capacity` options.
+我们将默认保留所有历史记录（无限制），直到您明确清除它们，您可以设置 `capacity` 选项保留的最大历史记录数量。
 
 ```ts
 const refHistory = useManualRefHistory(target, {
@@ -103,6 +103,6 @@ const refHistory = useManualRefHistory(target, {
 refHistory.clear() // explicitly clear all the history
 ```
 
-## Related Functions
+## 相关功能
 
 - `useRefHistory`

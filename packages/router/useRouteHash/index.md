@@ -4,7 +4,8 @@ category: '@Router'
 
 # useRouteHash
 
-Shorthand for reactive route.hash 
+响应式 route.hash 的简写
+
 
 ## Usage
 

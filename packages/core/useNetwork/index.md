@@ -4,7 +4,7 @@ category: Sensors
 
 # useNetwork
 
-Reactive [Network status](https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API). The Network Information API provides information about the system's connection in terms of general connection type (e.g., 'wifi', 'cellular', etc.). This can be used to select high definition content or low definition content based on the user's connection. The entire API consists of the addition of the NetworkInformation interface and a single property to the Navigator interface: Navigator.connection.
+响应式的 [Network status](https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API)。网络信息 API 根据一般连接类型（例如，“wifi”、“蜂窝数据”等）提供有关系统连接的信息。这可用于根据用户的连接选择高清内容或低清晰度内容。整个 API 包括添加 `NetworkInformation` 接口和 `Navigator` 接口的单个​​属性：`Navigator.connection`。
 
 ## Usage
 
@@ -16,7 +16,7 @@ const { isOnline, offlineAt, downlink, downlinkMax, effectiveType, saveData, typ
 console.log(isOnline.value)
 ```
 
-To use as an object, wrap it with `reactive()`
+要用作对象，请用 `reactive()` 包装它
 
 ```js
 import { reactive } from 'vue'

@@ -5,12 +5,10 @@ related: reactify
 
 # createUnrefFn
 
-Make a plain function accepting ref and raw values as arguments.
-Returns the same value the unconverted function returns, with proper typing.
+制作一个接受 ref 和 raw 值作为参数的普通函数。返回未转换的函数返回的相同值，并正确键入。
 
 ::: tip
-Make sure you're using the right tool for the job. Using `reactify`
-might be more pertinent in some cases where you want to evaluate the function on each changes of it's arguments.
+确保您使用正确的工具来完成这项工作。在某些情况下，如果您想在每次更改参数时评估函数，使用 `reactify` 可能更相关。
 :::
 
 ## Usage

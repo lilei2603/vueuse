@@ -4,9 +4,9 @@ category: '@Integrations'
 
 # useFocusTrap
 
-Reactive wrapper for [`focus-trap`](https://github.com/focus-trap/focus-trap)
+[`focus-trap`](https://github.com/focus-trap/focus-trap) 的响应式封装
 
-For more info on what options can be passed see [`createOptions`](https://github.com/focus-trap/focus-trap#createfocustrapelement-createoptions) in the `focus-trap` docs.
+有关可以传递哪些选项的更多信息，请参阅焦点陷阱文档中的 [`createOptions`](https://github.com/focus-trap/focus-trap#createfocustrapelement-createoptions)。
 
 ## Usage
 
@@ -33,7 +33,7 @@ const { hasFocus, activate, deactivate } = useFocusTrap(target)
 </template>
 ```
 
-**Automatically Focus**
+**自动对焦**
 
 ```html
 <script setup>
@@ -51,9 +51,9 @@ const { hasFocus, activate, deactivate } = useFocusTrap(target, { immediate: tru
 </template>
 ```
 
-## Using Component
+## 使用组件
 
-This function can't properly activate focus on elements with conditional rendering. In this case, you can use the `UseFocusTrap` component. Focus Trap will be activated automatically on mounting this component and deactivated on unmount.
+此功能无法正确激活对具有条件渲染的元素的关注。在这种情况下，您可以使用 `UseFocusTrap` 组件。 Focus Trap 将在安装此组件时自动激活，并在卸载时停用。
 
 ```html
 <script setup>

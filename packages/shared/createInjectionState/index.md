@@ -4,7 +4,7 @@ category: State
 
 # createInjectionState
 
-Create global state that can be injected into components.
+创建可以注入组件的全局状态。
 
 
 ## Usage
@@ -30,7 +30,7 @@ const [useProvideCounterStore, useCounterStore] = createInjectionState((initialV
 })
 
 export { useProvideCounterStore }
-// If you want to hide `useCounterStore` and wrap it in default value logic or throw error logic, please don't export `useCounterStore`
+// 如果你想隐藏`useCounterStore`并将其包装在默认值逻辑或抛出错误逻辑中，请不要导出`useCounterStore`
 export { useCounterStore }
 
 export function useCounterStoreWithDefaultValue() {
@@ -69,13 +69,13 @@ useProvideCounterStore(0)
 <script setup lang="ts">
 import { useCounterStore } from './useCounterStore'
 
-// use non-null assertion operator to ignore the case that store is not provided.
+// 使用非空断言运算符忽略未提供 store 的情况。
 const { count, double } = useCounterStore()!
-// if you want to allow component to working without providing store, you can use follow code instead:
+// 如果您想让组件在不提供商店的情况下工作，您可以使用以下代码：
 // const { count, double } = useCounterStore() ?? { count: ref(0), double: ref(0) }
-// also, you can use another hook to provide default value
+// 此外，您可以使用另一个挂钩来提供默认值
 // const { count, double } = useCounterStoreWithDefaultValue()
-// or throw error
+// 或抛出异常
 // const { count, double } = useCounterStoreOrThrow()
 </script>
 
@@ -96,7 +96,7 @@ const { count, double } = useCounterStore()!
 <script setup lang="ts">
 import { useCounterStore } from './useCounterStore'
 
-// use non-null assertion operator to ignore the case that store is not provided.
+// 使用非空断言运算符忽略未提供 store 的情况。
 const { increment } = useCounterStore()!
 </script>
 

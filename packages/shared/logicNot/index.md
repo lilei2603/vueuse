@@ -5,7 +5,7 @@ alias: not
 
 # logicNot
 
-`NOT` condition for ref.
+响应式数据的 `非` 条件参考
 
 ## Usage
 

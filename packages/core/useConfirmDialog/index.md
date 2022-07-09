@@ -4,19 +4,19 @@ category: Utilities
 
 # useConfirmDialog
 
-Creates event hooks to support modals and confirmation dialog chains.
+创建一个事件钩子来支持模态对话框和确认对话框链。
 
-Functions can be used on the template, and hooks are a handy skeleton for the business logic of modals dialog or other actions that require user confirmation.
+函数可以在模板中使用，钩子是模态对话框或其他需要用户确认的行为的落脚点。
 
-## Functions and hooks
+## 函数和钩子
 
-- `reveal()` - triggers `onReveal` hook and sets `revealed.value` to `true`. Returns promise that resolves by `confirm()` or `cancel()`.
-- `confirm()` - sets `isRevealed.value` to `false` and triggers `onConfirm` hook.
-- `cancel()` - sets `isRevealed.value` to `false` and triggers `onCancel` hook.
+- `reveal()` - 触发 `onReveal` 钩子并设置 `reveal.value` 为 `true`。返回由 `confirm()` 或 `cancel()` 解决的 `promise`。
+- `confirm()` - 将 `isRevealed.value` 设置为 `false` 并触发 `onConfirm` 钩子。
+- `cancel()` - 将 `isRevealed.value` 设置为 `false` 并触发 onCancel 钩子。
 
 ## Basic Usage
 
-### Using hooks
+### 使用钩子
 
 ```html
 <script setup>
@@ -50,7 +50,7 @@ const {
 
 ### Promise
 
-If you prefer working with promises:
+如果您更喜欢使用 Promise：
 
 ```html
 <script setup>

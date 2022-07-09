@@ -4,7 +4,7 @@ category: Component
 
 # tryOnMounted
 
-Safe `onMounted`. Call `onMounted()` if it's inside a component lifecycle, if not, just call the function
+安全的 `onMounted`。如果它在组件生命周期内，则调用 `onMounted()`，如果不在，则调用该函数。
 
 ## Usage
 

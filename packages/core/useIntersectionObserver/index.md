@@ -4,7 +4,7 @@ category: Elements
 
 # useIntersectionObserver
 
-Detects that a target element's visibility.
+检测目标元素的可见性。
 
 ## Usage
 

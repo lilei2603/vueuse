@@ -4,7 +4,7 @@ category: Utilities
 
 # makeDestructurable
 
-Make isomorphic destructurable for object and array at the same time. See [this blog](https://antfu.me/posts/destructuring-with-object-or-array/) for more details.
+同时使对象和数组同构可解构。有关更多详细信息，请参阅[此博客](https://antfu.me/posts/destructuring-with-object-or-array/)。
 
 ## Usage
 

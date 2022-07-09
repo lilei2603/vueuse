@@ -4,10 +4,10 @@ category: State
 
 # useStorage
 
-Reactive [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)/[SessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage)
+响应式的 [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)/[SessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage)
 
 ::: tip
-When using with Nuxt 3, this functions will **NOT** be auto imported in favor of Nitro's built-in [`useStorage()`](https://nitro.unjs.io/guide/storage.html). Use explicit import if you want to use the function from VueUse.
+与 Nuxt 3 一起使用时，**不会** 自动导入此函数，以支持 Nitro 的内置 [`useStorage()`](https://nitro.unjs.io/guide/storage.html)。如果要使用 `VueUse` 中的函数，请使用显式导入。
 :::
 
 ## Usage
@@ -31,11 +31,11 @@ const id = useStorage('my-id', 'some-string-id', sessionStorage) // returns Ref<
 state.value = null
 ```
 
-## Custom Serialization
+## 自定义序列化
 
-By default, `useStorage` will smartly use the corresponding serializer based on the data type of provided default value. For example, `JSON.stringify` / `JSON.parse` will be used for objects, `Number.toString` / `parseFloat` for numbers, etc.
+默认情况下，`useStorage` 会根据提供的默认值的数据类型智能地使用相应的序列化器。例如，`JSON.stringify` / `JSON.parse` 将用于对象，`Number.toString` / `parseFloat` 用于数字等。
 
-You can also provide your own serialization function to `useStorage`:
+你也可以提供自己的序列化函数来使用 `useStorage`:
 
 ```ts
 import { useStorage } from '@vueuse/core'
@@ -53,7 +53,7 @@ useStorage(
 )
 ```
 
-Please note when you provide `null` as the default value, `useStorage` can't assume the data type from it. In this case, you can provide a custom serializer or reuse the built-in ones explicitly.
+请注意，当您提供 `null` 作为默认值时，`useStorage` 不能从中假定数据类型。在这种情况下，您可以提供自定义序列化程序或显式重用内置序列化程序。
 
 ```ts
 import { StorageSerializers, useStorage } from '@vueuse/core'

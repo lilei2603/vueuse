@@ -4,7 +4,7 @@ category: Utilities
 
 # useEventBus
 
-A basic event bus.
+一个基本的事件总线
 
 ## Usage
 
@@ -32,7 +32,7 @@ bus.off(listener)
 bus.reset()
 ```
 
-Listeners registered inside of components `setup` will be unregistered automatically when the component gets unmounted.
+当组件卸载时，在组件设置中注册的侦听器将自动取消注册。
 
 ## TypeScript
 

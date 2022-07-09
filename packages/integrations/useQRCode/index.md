@@ -4,7 +4,7 @@ category: '@Integrations'
 
 # useQRCode
 
-wrapper for [`qrcode`](https://github.com/soldair/node-qrcode)
+[`qrcode`](https://github.com/soldair/node-qrcode) 的封装
 
 ## Install 
 
@@ -21,7 +21,7 @@ import { useQRCode } from '@vueuse/integrations/useQRCode'
 const qrcode = useQRCode('text-to-encode')
 ```
 
-or passing a `ref` to it, the returned data URL ref will change along with the source ref's changes.
+或将 ref 传递给它，返回的数据 URL ref 将随着源 ref 的更改而更改。
 
 ```ts
 import { ref } from 'vue'

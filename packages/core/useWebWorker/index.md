@@ -4,12 +4,12 @@ category: Misc
 
 # useWebWorker
 
-Simple [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) registration and communication.
+简单的 [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) 注册和通信。
 
 
-## Related Functions
+## 相关功能
 
-Try out the high-level `useWebWorkerFn`
+试试高级 `useWebWorkerFn`
 
 ## Usage
 
@@ -19,12 +19,12 @@ import { useWebWorker } from '@vueuse/core'
 const { data, post, terminate } = useWebWorker('/path/to/worker.js')
 ```
 
-| State | Type       | Description                                                                                          |
+| 状态 | 类型       | 描述                                                                                          |
 | ----- | ---------- | ---------------------------------------------------------------------------------------------------- |
-| data  | `Ref<any>` | Reference to the latest data received via the worker, can be watched to respond to incoming messages |
+| data  | `Ref<any>` | 参考通过worker接收到的最新数据，可以观察到响应传入的消息 |
 
 
-| Method    | Signature             | Description                      |
+| 方法    | 签名             | 描述                      |
 | --------- | --------------------- | -------------------------------- |
-| post      | `(data: any) => void` | Sends data to the worker thread. |
-| terminate | `() => void`          | Stops and terminates the worker. |
+| post      | `(data: any) => void` | 将数据发送到工作线程。 |
+| terminate | `() => void`          | 停止并终止工作人员。 |

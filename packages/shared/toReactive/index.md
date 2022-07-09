@@ -4,7 +4,7 @@ category: Utilities
 
 # toReactive
 
-Converts ref to reactive. Also made possible to create a "swapable" reactive object.
+将 ref 转换为 reactive。还可以创建“可交换”响应式对象。
 
 <RequiresProxy />
 

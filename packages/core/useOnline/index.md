@@ -4,7 +4,7 @@ category: Sensors
 
 # useOnline
 
-Reactive online state. A wrapper of `useNetwork`.
+响应式的在线状态. `useNetwork` 的封装
 
 ## Usage
 

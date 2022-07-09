@@ -4,7 +4,7 @@ category: State
 
 # createGlobalState
 
-Keep states in the global scope to be reusable across Vue instances.
+将状态保持在全局范围内，以便跨 Vue 实例重用。
 
 ## Usage
 

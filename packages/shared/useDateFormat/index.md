@@ -4,28 +4,28 @@ category: Utilities
 
 # useDateFormat
 
-Get the formatted date according to the string of tokens passed in, inspired by [dayjs](https://github.com/iamkun/dayjs).
+受 [dayjs](https://github.com/iamkun/dayjs) 启发，根据传入的token字符串获取格式化日期。
 
-**List of all available formats (HH:mm:ss by default):**
+**所有可用格式的列表（默认为 HH:mm:ss）：**
 
-| Format | Output           | Description                           |
+| 格式    | 输出             | 描述                                   |
 | ------ | ---------------- | ------------------------------------- |
-| `YY`   | 18               | Two-digit year                        |
-| `YYYY` | 2018             | Four-digit year                       |
-| `M`    | 1-12             | The month, beginning at 1             |
-| `MM`   | 01-12            | The month, 2-digits                   |
-| `D`    | 1-31             | The day of the month                  |
-| `DD`   | 01-31            | The day of the month, 2-digits        |
-| `H`    | 0-23             | The hour                              |
-| `HH`   | 00-23            | The hour, 2-digits                    |
-| `h`    | 1-12             | The hour, 12-hour clock               |
-| `hh`   | 01-12            | The hour, 12-hour clock, 2-digits     |
-| `m`    | 0-59             | The minute                            |
-| `mm`   | 00-59            | The minute, 2-digits                  |
-| `s`    | 0-59             | The second                            |
-| `ss`   | 00-59            | The second, 2-digits                  |
-| `SSS`  | 000-999          | The millisecond, 3-digits             |
-| `d`    | 0-6              | The day of the week, with Sunday as 0 |
+| `YY`   | 18               | 两位数年份                              |
+| `YYYY` | 2018             | 四位数年份                              |
+| `M`    | 1-12             | 月份，从 1 开始                         |
+| `MM`   | 01-12            | 月份，两位数                            |
+| `D`    | 1-31             | 月份中的日期                            |
+| `DD`   | 01-31            | 月份中的日期，2 位数字                   |
+| `H`    | 0-23             | 小时                                   |
+| `HH`   | 00-23            | 小时， 2 位数字                         |
+| `h`    | 1-12             | 小时，12 小时制                         |
+| `hh`   | 01-12            | 小时，12 小时制，2 位数字                |
+| `m`    | 0-59             | 分钟                                  |
+| `mm`   | 00-59            | 分钟，2 位数字                         |
+| `s`    | 0-59             | 秒                                    |
+| `ss`   | 00-59            | 秒，2 位数字                            |
+| `SSS`  | 000-999          | 毫秒，3 位数字                          |
+| `d`    | 0-6              | 星期几，星期日为 0                      |
 
 ## Usage
 

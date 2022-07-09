@@ -4,7 +4,7 @@ category: '@Integrations'
 
 # useNProgress
 
-Reactive wrapper for [`nprogress`](https://github.com/rstacruz/nprogress)
+[`nprogress`](https://github.com/rstacruz/nprogress) 的响应式封装
 
 ## Usage
 
@@ -18,9 +18,9 @@ function toggle() {
 }
 ```
 
-### Passing a progress percentage
+### 传递进度百分比
 
-You can pass a percentage to indicate where the bar should start from.
+您可以传递一个百分比来指示栏应该从哪里开始。
 
 ```js {3}
 import { useNProgress } from '@vueuse/integrations/useNProgress'
@@ -32,13 +32,13 @@ function done() {
 }
 ```
 
-> To change the progress percentage, set `progress.value = n`, where n is a number between 0..1.
+> 要更改进度百分比，请设置 `progress.value = n`，其中 n 是介于 0..1 之间的数字。
 
-### Customization
+### 定制化
 
-Just edit [nprogress.css](http://ricostacruz.com/nprogress/nprogress.css) to your liking. Tip: you probably only want to find and replace occurrences of #29d.
+只需根据自己的喜好编辑 [nprogress.css](http://ricostacruz.com/nprogress/nprogress.css)。提示：您可能只想查找和替换出现的#29d。
 
-You can [configure](https://github.com/rstacruz/nprogress#configuration) it by passing an object as a second parameter.
+您可以通过传递一个对象作为第二个参数来[配置](https://github.com/rstacruz/nprogress#configuration)它。
 
 ```js {4}
 import { useNProgress } from '@vueuse/integrations/useNProgress'

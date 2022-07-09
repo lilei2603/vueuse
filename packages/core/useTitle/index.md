@@ -4,10 +4,10 @@ category: Browser
 
 # useTitle
 
-Reactive document title.
+反应式页面标题。
 
 ::: tip
-When using with Nuxt 3, this functions will **NOT** be auto imported in favor of Nuxt's built-in `useTitle()`. Use explicit import if you want to use the function from VueUse.
+与 Nuxt 3 一起使用时，**不会**自动导入此函数，以支持 Nuxt 的内置 `useTitle()`。如果要使用 VueUse 中的函数，请使用显式导入。
 :::
 
 ## Usage
@@ -20,13 +20,13 @@ console.log(title.value) // print current title
 title.value = 'Hello' // change current title
 ```
 
-Set initial title immediately
+立即设置初始标题
 
 ```js
 const title = useTitle('New Title')
 ```
 
-Pass a `ref` and the title will be updated when the source ref changes
+传递一个 `ref` 并且当源 `ref` 改变时标题会被更新
 
 ```js
 import { useTitle } from '@vueuse/core'
@@ -40,8 +40,7 @@ const title = computed(() => {
 useTitle(title) // document title will match with the ref "title"
 ```
 
-Pass an optional template tag [Vue Meta Title Template](https://vue-meta.nuxtjs.org/guide/metainfo.html) 
-to update the title to be injected into this template:
+传递一个可选的模板标签 [Vue Meta Title Template](https://vue-meta.nuxtjs.org/guide/metainfo.html) 来更新要注入这个模板的标题：
 
 ```js
 const title = useTitle('New Title', { titleTemplate: '%s | My Awesome Website' })

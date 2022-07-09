@@ -4,7 +4,7 @@ category: Animation
 
 # useTimestamp
 
-Reactive current timestamp
+获取响应式的 `当前时间戳` 信息
 
 ## Usage
 

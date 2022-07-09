@@ -4,11 +4,11 @@ category: Animation
 
 # useTransition
 
-Transition between values
+值之间的转换
 
 ## Usage
 
-For simple transitions, provide a numeric source value to watch. When changed, the output will transition to the new value. If the source changes while a transition is in progress, a new transition will begin from where the previous one was interrupted.
+对于简单的转换，请提供要监听的数字源值。更改后，输出将转换为新值。如果在转换过程中源发生变化，则新转换将从前一个转换中断的位置开始。
 
 ```js
 import { ref } from 'vue'
@@ -22,7 +22,7 @@ const output = useTransition(source, {
 })
 ```
 
-To synchronize transitions, use an array of numbers. As an example, here is how we could transition between colors.
+要同步转换，请使用数字数组。例如，下面是我们如何在颜色之间进行转换。
 
 ```js
 const source = ref([0, 0, 0])
@@ -35,7 +35,7 @@ const color = computed(() => {
 })
 ```
 
-Transition easing can be customized using cubic bezier curves. Transitions defined this way work the same as [CSS easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function#easing_functions).
+可以使用三次贝塞尔曲线自定义过渡缓动。以这种方式定义的转换与 [CSS easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function#easing_functions)的工作方式相同。
 
 ```js
 useTransition(source, {
@@ -43,7 +43,7 @@ useTransition(source, {
 })
 ```
 
-The following transitions are available via the `TransitionPresets` constant.
+以下转换可通过 `TransitionPresets` 常量获得。
 
 - [`linear`](https://cubic-bezier.com/#0,0,1,1)
 - [`easeInSine`](https://cubic-bezier.com/#.12,0,.39,0)
@@ -71,7 +71,7 @@ The following transitions are available via the `TransitionPresets` constant.
 - [`easeOutBack`](https://cubic-bezier.com/#.34,1.56,.64,1)
 - [`easeInOutBack`](https://cubic-bezier.com/#.68,-.6,.32,1.6)
 
-For more complex transitions, a custom function can be provided.
+对于更复杂的转换，可以提供自定义函数。
 
 ```js
 const easeOutElastic = (n) => {
@@ -87,7 +87,7 @@ useTransition(source, {
 })
 ```
 
-To control when a transition starts, set a `delay` value. To choreograph behavior around a transition, define `onStarted` or `onFinished` callbacks.
+要控制转换何时开始，请设置 `delay`。要围绕转换编排行为，请定义 `onStarted` 或 `onFinished` 回调。
 
 ```js
 useTransition(source, {
@@ -101,4 +101,4 @@ useTransition(source, {
 })
 ```
 
-To temporarily stop transitioning, define a boolean `disabled` property. Be aware, this is not the same a `duration` of `0`. Disabled transitions track the source value **_synchronously_**. They do not respect a `delay`, and do not fire `onStarted` or `onFinished` callbacks.
+要暂时停止转换，请定义一个布尔类型的 `disabled` 属性。请注意，这与 `0` 的 `持续时间` 不同。禁用的转换 **同步** 跟踪源值。 他们不遵循 `delay`，也不会触发 `onStarted` 或 `onFinished` 回调。

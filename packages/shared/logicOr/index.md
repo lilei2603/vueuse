@@ -6,7 +6,7 @@ related: logicAnd, logicNot
 
 # logicOr
 
-`OR` conditions for refs.
+响应式数据的 `或` 条件参考
 
 ## Usage
 

@@ -4,7 +4,7 @@ category: Component
 
 # useVModel
 
-Shorthand for v-model binding, props + emit -> ref
+`v-model` 绑定的简写，props + emit -> ref
 
 ## Usage
 

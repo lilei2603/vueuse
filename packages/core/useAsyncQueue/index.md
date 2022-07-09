@@ -4,7 +4,7 @@ category: Utilities
 
 # useAsyncQueue
 
-Executes each asynchronous task sequentially and passed the current task result to the next task
+顺序执行每个异步任务，并将当前任务结果传递给下一个任务
 
 ## Usage
 

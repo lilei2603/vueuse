@@ -4,7 +4,7 @@ category: Animation
 
 # useNow
 
-Reactive current Date instance.
+获取响应式的 `当前日期` 实例。
 
 ## Usage
 

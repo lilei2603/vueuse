@@ -4,15 +4,15 @@ category: Browser
 
 # useBluetooth
 
-A reactive for working with the [Web Bluetooth API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API) which provides the ability to connect and interact with Bluetooth Low Energy peripherals.
+用于使用 [Web Bluetooth API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API) 的响应式，它提供了与蓝牙低功耗外围设备连接和交互的能力。
 
-The Web Bluetooth API lets websites discover and communicate with devices over the Bluetooth 4 wireless standard using the Generic Attribute Profile (GATT).
+Web 蓝牙 API 允许网站使用通用属性配置文件 (GATT) 通过蓝牙 4 无线标准发现设备并与之通信。
 
-N.B. It is currently partially implemented in Android M, Chrome OS, Mac, and Windows 10. For a full overview of browser compatibility please see [Web Bluetooth API Browser Compatibility](https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API#browser_compatibility)
+注：它目前在 Android M、Chrome OS、Mac 和 Windows 10 中部分实现。有关浏览器兼容性的完整概述，请参阅 [Web Bluetooth API Browser Compatibility](https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API#browser_compatibility) 
 
-N.B. There are a number of caveats to be aware of with the web bluetooth API specification. Please refer to the [Web Bluetooth W3C Draft Report](https://webbluetoothcg.github.io/web-bluetooth/) for numerous caveats around device detection and connection.
+注：网络蓝牙 API 规范有许多注意事项需要注意。请参阅 [Web Bluetooth W3C Draft Report](https://webbluetoothcg.github.io/web-bluetooth/)，了解有关设备检测和连接的大量注意事项。  
 
-N.B. This API is not available in Web Workers (not exposed via WorkerNavigator).
+注：此 API 在 Web Workers 中不可用（未通过 WorkerNavigator 公开）。
 
 ## Usage Default
 
@@ -38,13 +38,13 @@ const {
 </template>
 ```
 
-When the device has paired and is connected, you can then work with the server object as you wish.
+设备配对并连接后，您可以根据需要使用服务器对象。
 
 ## Usage Battery Level Example
 
-This sample illustrates the use of the Web Bluetooth API to read battery level and be notified of changes from a nearby Bluetooth Device advertising Battery information with Bluetooth Low Energy.
+此示例说明了如何使用 Web 蓝牙 API 来读取电池电量，并在附近的蓝牙设备通过蓝牙低功耗广告电池信息时收到更改通知。
 
-Here, we use the characteristicvaluechanged event listener to handle reading battery level characteristic value. This event listener will optionally handle upcoming notifications as well.
+在这里，我们使用characteristicvaluechanged 事件监听器来处理读取电池电量特征值。这个事件监听器也可以选择处理即将到来的通知。
 
 ```ts
 import { pausableWatch, useBluetooth } from '@vueuse/core'
@@ -106,4 +106,4 @@ const { stop } = pausableWatch(isConnected, (newIsConnected) => {
 </template>
 ```
 
-More samples can be found on [Google Chrome's Web Bluetooth Samples](https://googlechrome.github.io/samples/web-bluetooth/).
+更多示例可以在 [Google Chrome's Web Bluetooth Samples](https://googlechrome.github.io/samples/web-bluetooth/) 中找到。

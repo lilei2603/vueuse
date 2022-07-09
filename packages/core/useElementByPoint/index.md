@@ -4,7 +4,7 @@ category: Sensors
 
 # useElementByPoint
 
-Reactive element by point.
+逐点响应式元素。
 
 ## Usage
 

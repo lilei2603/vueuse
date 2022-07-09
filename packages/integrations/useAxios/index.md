@@ -4,7 +4,7 @@ category: '@Integrations'
 
 # useAxios
 
-wrapper for [`axios`](https://github.com/axios/axios)
+[`axios`](https://github.com/axios/axios) 的封装
 
 ## Install
 
@@ -20,7 +20,7 @@ import { useAxios } from '@vueuse/integrations/useAxios'
 const { data, isFinished } = useAxios('/api/posts')
 ```
 
-or use an instance of axios
+或使用 axios 的实例
 
 ```ts
 import axios from 'axios'
@@ -33,7 +33,7 @@ const instance = axios.create({
 const { data, isFinished } = useAxios('/posts', instance)
 ```
 
-use an instance of axios with config options
+使用带有配置选项的 axios 实例
 
 ```ts
 import axios from 'axios'
@@ -46,7 +46,7 @@ const instance = axios.create({
 const { data, isFinished } = useAxios('/posts', { method: 'POST' }, instance)
 ```
 
-When you don't pass the `url`. The default value is `{immediate: false}`
+当您不传递 `url` 时。默认值为 `{immediate: false}`
 ```ts
 import { useAxios } from '@vueuse/integrations/useAxios'
 
@@ -54,7 +54,7 @@ const { execute } = useAxios()
 execute(url)
 ```
 
-The `execute` function `url` here is optional, and `url2` will replace the `url1`. 
+这里的执行函数url是可选的，url2会代替url1。
 ```ts
 import { useAxios } from '@vueuse/integrations/useAxios'
 
@@ -62,7 +62,7 @@ const { execute } = useAxios(url1, {}, { immediate: false })
 execute(url2)
 ```
 
-The `execute` function resolves with a result of network request.
+执行函数以网络请求的结果解析。
 ```ts
 import { useAxios } from '@vueuse/integrations/useAxios'
 
@@ -70,7 +70,7 @@ const { execute } = useAxios()
 const result = await execute(url)
 ```
 
-use an instance of axios with `immediate` options
+执行函数以网络请求的结果解析。
 
 ```ts
 import axios from 'axios'

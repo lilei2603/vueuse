@@ -4,13 +4,13 @@ category: Utilities
 
 # extendRef
 
-Add extra attributes to Ref.
+为 ref 添加额外的属性
 
 ## Usage
 
-> This function is **NOT compatible with Vue 2**.
+> 此功能与 Vue 2 **不兼容**。
 
-> Please note the extra attribute will not be accessible in Vue's template.
+> 请注意，在 Vue 的模板中将无法访问额外的属性。
 
 ```ts
 import { ref } from 'vue'
@@ -24,7 +24,7 @@ extended.value === 'content'
 extended.foo === 'extra data'
 ```
 
-Refs will be unwrapped and be reactive
+Refs 将被解包并且是响应式的
 
 ```ts
 const myRef = ref('content')

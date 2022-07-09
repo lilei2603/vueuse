@@ -5,7 +5,7 @@ alias: useDebounce, debouncedRef
 
 # refDebounced
 
-Debounce execution of a ref value.
+防抖的响应式数据
 
 ## Usage
 
@@ -22,8 +22,8 @@ await sleep(1100)
 
 console.log(debounced.value) // 'bar'
 ```
-You can also pass an optional 3rd parameter including maxWait option. See `useDebounceFn` for details.
+您还可以传递一个可选的第三个参数，包括 maxWait 选项。有关详细信息，请参阅 `useDebounceFn`。
 
-## Recommended Reading
+## 推荐阅读
 
 - [**Debounce vs Throttle**: Definitive Visual Guide](https://redd.one/blog/debounce-vs-throttle)

@@ -5,11 +5,11 @@ alias: ignorableWatch
 
 # watchIgnorable
 
-Ignorable watch
+可忽略的监听器
 
 ## Usage
 
-Extended `watch` that returns extra `ignoreUpdates(updater)` and `ignorePrevAsyncUpdates()` to ignore particular updates to the source.
+扩展监视返回额外的 `ignoreUpdates(updater)` 和 `ignorePrevAsyncUpdates()` 以忽略对源的特定更新。
 
 ```ts
 import { watchIgnorable } from '@vueuse/core'
@@ -43,12 +43,11 @@ await nextTick() // logs: Changed to logged!
 
 ## Flush timing
 
-`watchIgnorable` accepts the same options as `watch` and uses the same defaults.
-So, by default the composable works using `flush: 'pre'`.
+`watchIgnorable` 接受与 `watch` 相同的选项并使用相同的默认值。因此，默认情况下可组合使用 `flush：'pre'`。
 
 ## `ignorePrevAsyncUpdates`
 
-This feature is only for async flush `'pre'` and `'post'`. If `flush: 'sync'` is used, `ignorePrevAsyncUpdates()` is a no-op as the watch will trigger immediately after each update to the source. It is still provided for sync flush so the code can be more generic.
+此功能仅适用于异步刷新 `“pre”` 和 `“post”`。如果使用了 `flush: 'sync'`，`ignorePrevAsyncUpdates()` 是一个空操作，因为每次更新到源后，`watch` 都会立即触发。它仍然为同步刷新提供，因此代码可以更通用。
 
 ```ts
 import { watchIgnorable } from '@vueuse/core'
@@ -77,6 +76,6 @@ source.value = 'after'
 await nextTick() // logs: Changed to after!
 ```
 
-## Recommended Readings
+## 推荐读物
 
 - [Ignorable Watch](https://patak.dev/vue/ignorable-watch.html) - by [@matias-capeletto](https://github.com/matias-capeletto)

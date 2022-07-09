@@ -4,7 +4,7 @@ category: Utilities
 
 # useCached
 
-Cache a ref with a custom comparator.
+缓存响应式数据
 
 ## Usage
 

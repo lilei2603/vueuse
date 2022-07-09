@@ -4,7 +4,7 @@ category: Elements
 
 # useWindowSize
 
-Reactive window size
+获取响应式的窗口大小信息
 
 ## Usage
 

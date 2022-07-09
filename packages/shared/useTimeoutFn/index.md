@@ -4,7 +4,7 @@ category: Animation
 
 # useTimeoutFn
 
-Wrapper for `setTimeout` with controls.
+封装了 `setTimeout` 。
 
 ```js
 import { useTimeoutFn } from '@vueuse/core'

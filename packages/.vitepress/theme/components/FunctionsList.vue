@@ -72,7 +72,7 @@ function toggleSort(method: string) {
 <template>
   <div class="grid grid-cols-[80px_auto] gap-y-2">
     <div opacity="80" text="sm">
-      Core
+      核心组件
     </div>
     <div flex="~ wrap" gap="2" m="b-2">
       <button
@@ -86,7 +86,7 @@ function toggleSort(method: string) {
       </button>
     </div>
     <div opacity="80" text="sm">
-      Add-ons
+      附加组件
     </div>
     <div flex="~ wrap" gap="2" m="b-2">
       <button
@@ -100,11 +100,11 @@ function toggleSort(method: string) {
       </button>
     </div>
     <div opacity="80" text="sm">
-      Sort by
+      排序
     </div>
     <div flex="~ wrap" gap="2" m="b-2">
       <button v-if="search" class="select-button active">
-        Search
+        搜索
       </button>
       <button
         v-for="method of sortMethods"
@@ -120,7 +120,7 @@ function toggleSort(method: string) {
       </button>
     </div>
     <div opacity="80" text="sm">
-      Filters
+      过滤
     </div>
     <div flex="~ gap-4">
       <label class="checkbox">

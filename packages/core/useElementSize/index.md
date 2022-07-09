@@ -4,7 +4,7 @@ category: Elements
 
 # useElementSize
 
-Reactive size of an HTML element. [ResizeObserver MDN](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver)
+响应式的HTML元素的大小。[ResizeObserver MDN](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver)
 
 ## Usage
 
@@ -35,7 +35,7 @@ export default {
 </script>
 ```
 
-## Component Usage
+## 组件用法
 
 ```html
 <UseElementSize v-slot="{ width, height }">
@@ -43,7 +43,7 @@ export default {
   Height: {{ height }}
 </UseElementSize>
 ```
-## Directive Usage
+## 指令用法
 
 ```html
 <script setup lang="ts">

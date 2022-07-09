@@ -5,7 +5,7 @@ alias: autoResetRef
 
 # refAutoReset
 
-A ref which will be reset to the default value after some time.
+响应式数据在一段时间后将重置为默认值
 
 ## Usage
 
@@ -15,7 +15,7 @@ import { refAutoReset } from '@vueuse/core'
 const message = refAutoReset('default message', 1000)
 
 const setMessage = () => {
-  // here the value will change to 'message has set' but after 1000ms, it will change to 'default message'
+  // 此处的值将更改为“消息已设置”，但在 1000 毫秒后，它将更改为“默认消息”
   message.value = 'message has set'
 }
 ```

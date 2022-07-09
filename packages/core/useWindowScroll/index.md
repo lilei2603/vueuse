@@ -4,7 +4,7 @@ category: Elements
 
 # useWindowScroll
 
-Reactive window scroll
+获取响应式的窗口滚动信息
 
 ## Usage
 

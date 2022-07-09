@@ -4,7 +4,8 @@ category: '@Router'
 
 # useRouteParams
 
-Shorthand for reactive route.params
+响应式 route.params 的简写
+
 
 ## Usage
 

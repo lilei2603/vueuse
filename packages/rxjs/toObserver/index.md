@@ -4,7 +4,8 @@ category: '@RxJS'
 
 # toObserver
 
-Sugar function to convert a ref in an observer
+用于在观察者中转换 ref 的糖函数
+
 
 ## Usage
 

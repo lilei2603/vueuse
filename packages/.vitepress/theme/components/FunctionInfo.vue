@@ -19,24 +19,24 @@ const getFunctionLink = (fn: string) => {
 <template>
   <div class="grid grid-cols-[100px_auto] gap-2 text-sm -mt-2 mb-8 items-start">
     <div opacity="50">
-      Category
+      分类
     </div>
     <div><a :href="link">{{ info.category }}</a></div>
     <template v-if="info.package !== 'core' && info.package !== 'shared'">
       <div opacity="50">
-        Package
+        包
       </div>
       <div><code>@vueuse/{{ info.package }}</code></div>
     </template>
     <template v-if="info.lastUpdated">
       <div opacity="50">
-        Last Changed
+        最后更新
       </div>
       <div>{{ lastUpdated }}</div>
     </template>
     <template v-if="info.alias?.length">
       <div opacity="50">
-        Alias
+        别名
       </div>
       <div flex="~ gap-1 wrap">
         <code v-for="a, idx of info.alias" :key="idx" class="!py-0">{{ a }}</code>
@@ -44,7 +44,7 @@ const getFunctionLink = (fn: string) => {
     </template>
     <template v-if="info.related?.length">
       <div opacity="50">
-        Related
+        相关的
       </div>
       <div flex="~ gap-1 wrap">
         <a

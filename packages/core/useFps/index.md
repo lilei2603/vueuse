@@ -4,7 +4,7 @@ category: Sensors
 
 # useFps
 
-Reactive FPS (frames per second).
+响应式的 FPS（每秒帧数）。
 
 ## Usage
 

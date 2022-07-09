@@ -4,7 +4,7 @@ category: Sensors
 
 # usePageLeave
 
-Reactive state to show whether the mouse leaves the page.
+显示鼠标是否离开页面的响应式状态。
 
 ## Usage
 

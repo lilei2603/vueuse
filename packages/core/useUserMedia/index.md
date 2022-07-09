@@ -4,7 +4,7 @@ category: Sensors
 
 # useUserMedia
 
-Reactive [`mediaDevices.getUserMedia`](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) streaming.
+响应式的 [`mediaDevices.getUserMedia`](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) 流式传输。
 
 ## Usage
 

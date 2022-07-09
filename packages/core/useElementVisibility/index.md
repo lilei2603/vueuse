@@ -4,7 +4,7 @@ category: Elements
 
 # useElementVisibility
 
-Tracks the visibility of an element within the viewport.
+跟踪视口中元素的可见性。
 
 ## Usage
 
@@ -33,7 +33,7 @@ export default {
 </script>
 ```
 
-## Component Usage
+## 组件用法
 
 ```html
 <UseElementVisibility v-slot="{ isVisible }">
@@ -41,7 +41,7 @@ export default {
 </UseElementVisibility>
 ```
 
-## Directive Usage
+## 指令用法
 
 ```html
 <script setup lang="ts">

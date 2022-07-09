@@ -4,7 +4,7 @@ category: Browser
 
 # useEyeDropper
 
-Reactive [EyeDropper API](https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API)
+响应式的 [EyeDropper API](https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API)
 
 ## Usage
 

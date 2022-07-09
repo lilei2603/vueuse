@@ -4,7 +4,8 @@ category: '@Router'
 
 # useRouteQuery
 
-Shorthand for reactive route.query
+响应式 route.query 的简写
+
 
 ## Usage
 

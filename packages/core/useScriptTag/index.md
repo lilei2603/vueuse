@@ -4,7 +4,7 @@ category: Browser
 
 # useScriptTag
 
-Script tag injecting.
+脚本标签注入。
 
 ## Usage
 
@@ -20,11 +20,11 @@ useScriptTag(
 )
 ```
 
-The script will be automatically loaded on the component mounted and removed when the component on unmounting.
+卸载组件时，脚本将自动加载到已安装和删除的组件上。
 
 ## Configurations
 
-Set `manual: true` to have manual control over the timing to load the script.
+设置 `manual: true` 可以手动控制加载脚本的时间。
 
 ```ts
 import { useScriptTag } from '@vueuse/core'

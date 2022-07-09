@@ -4,7 +4,7 @@ category: Sensors
 
 # useScroll
 
-Reactive scroll position and state
+响应式的滚动位置和状态
 
 ## Usage
 

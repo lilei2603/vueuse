@@ -4,7 +4,7 @@ category: Sensors
 
 # useFocusWithin
 
-Reactive utility to track if an element or one of its decendants has focus. It is meant to match the behvaior of the `:focus-within` CSS psuedo-class. A common use case would be on a form element to see if any of its inputs currently have focus.
+用于跟踪元素或其后代之一是否具有焦点的反应性实用程序。它旨在匹配 `:focus-within` CSS 伪类的行为。一个常见的用例是在表单元素上查看其任何输入当前是否具有焦点。
 
 ## Basic Usage
 

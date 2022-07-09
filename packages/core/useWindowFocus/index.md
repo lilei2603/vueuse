@@ -4,7 +4,7 @@ category: Elements
 
 # useWindowFocus
 
-Reactively track window focus with `window.onfocus` and `window.onblur` events.
+使用 `window.onfocus` 和 `window.onblur` 事件反应性地跟踪窗口焦点。
 
 ## Usage
 

@@ -4,7 +4,7 @@ category: Utilities
 
 # toRefs
 
-Extended [`toRefs`](https://v3.vuejs.org/api/refs-api.html#torefs) that also accepts refs of an object.
+扩展 [`toRefs`](https://v3.vuejs.org/api/refs-api.html#torefs)为可以接收对象的 refs。
 
 ## Usage
 
@@ -30,7 +30,7 @@ const [ a, b ] = toRefs(arr)
 
 ## Use-cases
 
-### Destructing a props object
+### 破坏 props 对象
 
 ```html
 <template>

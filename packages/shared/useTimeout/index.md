@@ -4,7 +4,7 @@ category: Animation
 
 # useTimeout
 
-Update value after a given time with controls.
+使用控件在给定时间后更新值。
 
 ## Usage
 

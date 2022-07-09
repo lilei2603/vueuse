@@ -4,7 +4,7 @@ category: Component
 
 # unrefElement
 
-Unref for dom element.
+对DOM元素取消响应式
 
 ## Usage
 
